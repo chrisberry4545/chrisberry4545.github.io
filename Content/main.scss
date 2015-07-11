@@ -70,7 +70,9 @@ h1 {
 
 .portfolio {
     position: relative;
-    padding-top: 3rem;
+    padding-top: 3rem;  
+    max-width: 1400px;
+    margin: auto;
 
     &::before {
         content: '';
