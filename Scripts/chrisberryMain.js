@@ -181,8 +181,8 @@
             gbc,
             houseOwage,
             librarians,
-            parabolaSoftware,
             mtgMirror,
+            parabolaSoftware,
             animalAdjetives,
             dissertation
         ];
