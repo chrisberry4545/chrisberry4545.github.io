@@ -69,8 +69,11 @@
     <section class="signOffSection" data-bind="with: personalDetails">
         <div class="signOffInner">
             <a data-bind="attr: {href: email}">
-                <h3><span data-bind="text: name"></span> - <span data-bind="text: location"></span></h3>
-                <h3 data-bind="text: email"></h3>
+                <h4>
+                    <span data-bind="text: name"></span> - <span data-bind="text: location"></span>
+                    <br />
+                    <span data-bind="text: email"></span>
+                </h4>
             </a>
         </div>
     </section>

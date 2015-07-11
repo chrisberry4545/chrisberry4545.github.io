@@ -172,8 +172,6 @@ h1 {
     text-align: center; }
     .signOffSection .signOffInner a {
       color: white; }
-    .signOffSection .signOffInner h3 {
-      margin: 0; }
 
 /*Animation*/
 @keyframes zoomBounce {
