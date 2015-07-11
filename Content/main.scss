@@ -4,7 +4,8 @@ $timelineInnerColor: #563d7c; //rgba(190, 59, 200, 1);
 $lightDividerColor: rgba(0,0,0,0.3);
 
 $timelineImageSize: 60px;
-$timelineLeftSmall: ($timelineImageSize / 2);
+$timeLineAdditonalLeft: 10px;
+$timelineLeftSmall: ($timelineImageSize / 2) + $timeLineAdditonalLeft;
 
 $mainGradientBackground: linear-gradient(to bottom right, $timelineColor, $timelineInnerColor);
 
@@ -132,7 +133,7 @@ h1 {
             width: $timelineImageSize;
             height: $timelineImageSize;
             background: $mainGradientBackground;
-            left: 0;
+            left: $timeLineAdditonalLeft;
 
             @media screen and (min-width: $desktopBP) {
                 left: 50%;

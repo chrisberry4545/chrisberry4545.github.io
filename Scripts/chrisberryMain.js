@@ -94,11 +94,11 @@
         "Parabola Software",
         "While working at Parabola I produced software for a range of clients, including colleges, charities and housing associations. This included:",
         [
-            "An Online Enrolment Application for a college which communicates with their main SharePoint site using a web service (Web API 2). The enrolment solution was later extended to allow payments via WorldPay. I took full ownership of the project and handled most of the analysis and development.",
+            "An Online Enrolment Application for a college which communicates with their main SharePoint site using Web API 2. The solution was later extended to allow payments via WorldPay. I took full ownership of the project and handled most of the analysis and development.",
             "SharePoint layouts and controls for client websites.",
-            "A cloud based web application which allows caretakers to record fire safety checks on a mobile device. Staff at head office can then view reports created from this data.",
+            "A cloud based web application for caretakers to record fire safety checks on a mobile device. Reports were created for their head office from this data.",
             "A cloud based web application for a charity to record details of contact with potential donors.",
-            "Upgrading Parabola’s website to be responsive while remaining fully compatible with the currently used Orchard CMS.",
+            "Upgrading Parabola’s website to be responsive while remaining fully compatible with Orchard CMS.",
             "A tool to migrate data from Umbraco CMS to a SharePoint 2013 site.",
             "Upgrades to an MVC College application."
         ],
