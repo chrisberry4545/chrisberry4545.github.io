@@ -140,7 +140,7 @@
         "MSc. Dissertation",
         "For my MSc. Dissertation I studied the application of Reinforced Learning through self play to the game of Monopoly. I used this technique to produce an artificial intelligence which performed well against humans in a game of Monopoly.",
         [],
-        "Images/Dissertation/monopolyCombined.png",
+        "Images/Dissertation/monopolycombined.png",
         "Great British Chefs Homepage",
         "https://sites.google.com/site/chrisberry4545/dissertation",
         visitTheSiteStr,
