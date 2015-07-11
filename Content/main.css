@@ -27,8 +27,9 @@ h1 {
   border-radius: 5px;
   display: inline-block;
   width: 6rem;
-  text-align: center;
-  margin: auto 10% auto 10%; }
+  text-align: center; }
+  .mainBtn:last-child {
+    margin: auto auto auto 10%; }
   .mainBtn:only-child {
     margin: auto; }
   .mainBtn .buttonIcon {

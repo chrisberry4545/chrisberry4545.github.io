@@ -43,7 +43,10 @@ h1 {
     display: inline-block;
     width: 6rem;
     text-align: center;
-    margin: auto 10% auto 10%;
+
+    &:last-child {
+        margin: auto auto auto 10%;
+    }
 
     &:only-child {
         margin: auto;
