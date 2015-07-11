@@ -79,7 +79,7 @@
             "Full music controls",
             "Tracks continue to play in a service when user leaves the app and can be accessed from the phone menu"
         ],
-        "Images/Librarians/librariansPhoneScreenshot1.png",
+        "Images/Librarians/librariansTabletScreenshot1.png",
         "Librarians app phone screenshot",
         "https://play.google.com/store/apps/details?id=chris.librariansep",
         viewInPlayStoreStr,
@@ -102,7 +102,7 @@
             "A tool to migrate data from Umbraco CMS to a SharePoint 2013 site.",
             "Upgrades to an MVC College application."
         ],
-        "Images/Parabola/ParabolaWebsite.png",
+        "Images/Parabola/ParabolaTablet.png",
         "Parabola responsive website screenshot",
         "http://www.parabolasoft.co.uk/",
         "Company site",
@@ -121,7 +121,7 @@
             "Favourites",
             "Limited user settings"
         ],
-        "Images/AnimalAdjectives/CrustyBirmanScreen.png",
+        "Images/AnimalAdjectives/AATabletScreen.png",
         "Animal Adjectives Screenshot - Crusty Birman",
         "https://play.google.com/store/apps/details?id=chrisb.animaladjectives&hl=en_GB",
         viewInPlayStoreStr,
