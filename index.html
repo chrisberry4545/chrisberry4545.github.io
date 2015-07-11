@@ -2,59 +2,69 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Chris Berry - Full stack web developer</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href="Content/material.css" rel="stylesheet" />
     <link href="Content/main.min.css" rel="stylesheet"/>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
     <section  data-bind="with: personalDetails" class="titleSection">
         <h1 data-bind="text: name"></h1>
-        <h3 data-bind="text: jobTitle"></h3>
+        <h3 data-bind="text: blurb"></h3>
         <h4 data-bind="foreach: keySkills" class="skillsSection">
             <span class="skill" data-bind="text: $data"></span>
+        </h4>
+        <h4>
+            <a data-bind="attr: {href: email}, text: email"></a>
         </h4>
     </section>
 
     <div class="portfolio" data-bind="template: { name: 'project-template', foreach: projects }"></div>
-
     <script type="text/html" id="project-template">
         <section class="projectCard">
 
             <div class="timelineImage isHidden"><img data-bind="attr: {src: timelineImage }" /></div>
 
+            <div class="descriptionSection projectCardSection">
+                <h2><span data-bind="text: title"></span> <!--<span data-bind="text: year"></span>--></h2>
+                <p class="skillsSection">
+                    Technology used:&nbsp;
+                    <!-- ko foreach: skills -->
+                    <span class="skill" data-bind="text: $data"></span>
+                    <!-- /ko -->
+                </p>
+            </div>
+
             <div class="imageSection isHidden projectCardSection">
                 <img class="projectImage" data-bind="attr: {src: image, alt: imageAlt}" />
-                <p class="skillsSection" data-bind="foreach: skills">
-                    <span class="skill" data-bind="text: $data"></span>
-                </p>
 
-                <div data-bind="if: link != null">
-                    <a target="_blank" data-bind="attr: { href: link }, text: linkName" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect"></a>
+                <div class="linkButtonDiv">
+                    <!-- ko if: link != null -->
+                    <a target="_blank" data-bind="attr: { href: link }" class="mainBtn">
+                        <img class="buttonIcon" data-bind="attr: { src: linkIcon, alt: linkName}" />
+                    </a>
+                    <!-- /ko -->
+                    <!-- ko if: githubLink != null -->
+                    <a target="_blank" data-bind="attr: { href: githubLink}" class="mainBtn">
+                        <img class="buttonIcon" data-bind="attr: { src: githubLinkIcon, alt: githubLinkText}" />
+                    </a>
+                    <!-- /ko -->
                 </div>
             </div>
 
-            <div class="descriptionSection projectCardSection">
-                <h2><span data-bind="text: title"></span> <!--<span data-bind="text: year"></span>--></h2>
-            </div>
             <div class="clear"></div>
         </section>
     </script>
 
-
     <section class="signOffSection" data-bind="with: personalDetails">
         <div class="signOffInner">
-            <a href="mailto:chrisberry4545@googlemail.com">
-                <h5><span data-bind="text: name"></span> - <span data-bind="text: location"></span></h5>
-                <h5 data-bind="text: email"></h5>
+            <a data-bind="attr: {href: email}">
+                <h3><span data-bind="text: name"></span> - <span data-bind="text: location"></span></h3>
+                <h3 data-bind="text: email"></h3>
             </a>
         </div>
     </section>
 
-
     <script src="Scripts/jquery.min.js"></script>
-    <script src="Scripts/material.js"></script>
     <script src="Scripts/knockout-3.3.0.js"></script>
     <script src="Scripts/chrisberryMain.js"></script>
 </body>
