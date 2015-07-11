@@ -3,11 +3,15 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif; }
 
+h1 {
+  font-size: 2.5rem; }
+
 .titleSection {
   color: white;
   text-align: center;
   border: 1px solid black;
-  background: linear-gradient(to bottom right, #6f5499, #563d7c); }
+  background: linear-gradient(to bottom right, #6f5499, #563d7c);
+  padding: 2rem; }
   .titleSection a {
     color: white; }
 
@@ -21,8 +25,11 @@
   text-decoration: none;
   border-radius: 5px;
   display: inline-block;
-  margin: auto;
-  width: 6rem; }
+  width: 6rem;
+  text-align: center;
+  margin: auto 10% auto 10%; }
+  .mainBtn:only-child {
+    margin: auto; }
   .mainBtn .buttonIcon {
     width: 1.5rem; }
 
@@ -44,7 +51,7 @@
     height: 100%;
     width: 4px;
     background: #6f5499; }
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1041px) {
       .portfolio::before {
         left: 50%;
         margin-left: -2px; } }
@@ -57,7 +64,7 @@
       margin-bottom: 0; }
       .portfolio .projectCard:last-child .imageSection {
         border-bottom: none; }
-    @media screen and (min-width: 1170px) {
+    @media screen and (min-width: 1041px) {
       .portfolio .projectCard {
         margin-left: 3rem; } }
     .portfolio .projectCard h2 {
@@ -72,7 +79,7 @@
       height: 60px;
       background: #563d7c;
       left: 0; }
-      @media screen and (min-width: 1170px) {
+      @media screen and (min-width: 1041px) {
         .portfolio .projectCard .timelineImage {
           left: 50%;
           margin-left: -30px; } }
@@ -96,14 +103,14 @@
         transform: translate(-50%, -50%); }
     .portfolio .projectCard .projectCardSection {
       width: 100%; }
-      @media screen and (min-width: 1170px) {
+      @media screen and (min-width: 1041px) {
         .portfolio .projectCard .projectCardSection {
           width: 45%; } }
     .portfolio .projectCard .imageSection {
       float: right;
       padding-bottom: 2rem;
       border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-      @media screen and (min-width: 1170px) {
+      @media screen and (min-width: 1041px) {
         .portfolio .projectCard .imageSection {
           text-align: center; } }
       .portfolio .projectCard .imageSection .projectImage {
@@ -118,15 +125,37 @@
         animation: bounceFromSideLeft 0.6s; }
     .portfolio .projectCard .descriptionSection {
       float: left; }
-    .portfolio .projectCard:nth-child(odd) .imageSection {
-      float: left; }
-      .portfolio .projectCard:nth-child(odd) .imageSection.bounceIn {
-        -moz-animation: bounceFromSideRight 0.6s;
-        -o-animation: bounceFromSideRight 0.6s;
-        -webkit-animation: bounceFromSideRight 0.6s;
-        animation: bounceFromSideRight 0.6s; }
-    .portfolio .projectCard:nth-child(odd) .descriptionSection {
-      float: right; }
+      .portfolio .projectCard .descriptionSection.isHidden {
+        visibility: hidden; }
+      .portfolio .projectCard .descriptionSection.bounceIn {
+        visibility: visible;
+        -moz-animation: bounceFromSideLeft 0.6s;
+        -o-animation: bounceFromSideLeft 0.6s;
+        -webkit-animation: bounceFromSideLeft 0.6s;
+        animation: bounceFromSideLeft 0.6s; }
+      @media screen and (min-width: 1041px) {
+        .portfolio .projectCard .descriptionSection.bounceIn {
+          -moz-animation: bounceFromSideRight 0.6s;
+          -o-animation: bounceFromSideRight 0.6s;
+          -webkit-animation: bounceFromSideRight 0.6s;
+          animation: bounceFromSideRight 0.6s; }
+ }
+    @media screen and (min-width: 1041px) {
+      .portfolio .projectCard:nth-child(odd) .imageSection {
+        float: left; }
+        .portfolio .projectCard:nth-child(odd) .imageSection.bounceIn {
+          -moz-animation: bounceFromSideRight 0.6s;
+          -o-animation: bounceFromSideRight 0.6s;
+          -webkit-animation: bounceFromSideRight 0.6s;
+          animation: bounceFromSideRight 0.6s; }
+      .portfolio .projectCard:nth-child(odd) .descriptionSection {
+        float: right; }
+        .portfolio .projectCard:nth-child(odd) .descriptionSection.bounceIn {
+          -moz-animation: bounceFromSideLeft 0.6s;
+          -o-animation: bounceFromSideLeft 0.6s;
+          -webkit-animation: bounceFromSideLeft 0.6s;
+          animation: bounceFromSideLeft 0.6s; }
+ }
     .portfolio .projectCard img {
       max-width: 100%; }
 

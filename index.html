@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <section  data-bind="with: personalDetails" class="titleSection">
+    <section data-bind="with: personalDetails" class="titleSection">
         <h1 data-bind="text: name"></h1>
         <h3 data-bind="text: blurb"></h3>
         <h4 data-bind="foreach: keySkills" class="skillsSection">
@@ -16,6 +16,9 @@
         <h4>
             <a data-bind="attr: {href: email}, text: email"></a>
         </h4>
+        <a class="mainBtn" data-bind="attr: {href: githubUrl }" target="_blank">
+            <img class="buttonIcon" data-bind="attr: {src: githubLogo}" alt="My Github">
+        </a>
     </section>
 
     <div class="portfolio" data-bind="template: { name: 'project-template', foreach: projects }"></div>
@@ -24,14 +27,22 @@
 
             <div class="timelineImage isHidden"><img data-bind="attr: {src: timelineImage }" /></div>
 
-            <div class="descriptionSection projectCardSection">
+            <div class="descriptionSection projectCardSection isHidden">
                 <h2><span data-bind="text: title"></span> <!--<span data-bind="text: year"></span>--></h2>
+                <h3 data-bind="text: year"></h3>
                 <p class="skillsSection">
-                    Technology used:&nbsp;
+                    Technology used:
                     <!-- ko foreach: skills -->
                     <span class="skill" data-bind="text: $data"></span>
                     <!-- /ko -->
                 </p>
+
+
+                <p class="projDescription" data-bind="text: description"></p>
+
+                <ul data-bind="foreach: additionalDescBullets">
+                    <li data-bind="text: $data"></li>
+                </ul>
             </div>
 
             <div class="imageSection isHidden projectCardSection">
