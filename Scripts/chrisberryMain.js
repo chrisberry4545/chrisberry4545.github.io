@@ -184,7 +184,7 @@
             imageSections.each(function () {
                 var offsetTop = $(this).offset().top;
                 var $current = $(this);
-                if ($current.hasClass(hiddenClass) && offsetTop <= windowScroll) {
+                if ($current.hasClass(hiddenClass) && offsetTop <= windowScroll || (window.scrollTop() + $window.height() == $(document).height())) {
                     $current.removeClass(hiddenClass).addClass('bounceIn');
                 }
             });
