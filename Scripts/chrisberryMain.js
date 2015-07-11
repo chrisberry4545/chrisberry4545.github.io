@@ -73,8 +73,12 @@
 
     var librarians = new ProjectElement(
         "The Librarians app",
-        "The Librarians wanted to release their most recent EP as a mobile app. The app lets fans play the EP and read about the band.",
-        [],
+        "The Librarians wanted to release their most recent EP as a mobile app. The app lets fans play the EP and read about the band. Features include:",
+        [
+            "Spinner to choose tracks",
+            "Full music controls",
+            "Tracks continue to play in a service when user leaves the app and can be accessed from the phone menu"
+        ],
         "Images/Librarians/librariansPhoneScreenshot1.png",
         "Librarians app phone screenshot",
         "https://play.google.com/store/apps/details?id=chris.librariansep",
@@ -110,8 +114,13 @@
     var animalAdjetives = new ProjectElement(
         "Animal Adjectives",
         "Throbbing Goat, Lecherous Yellow Eyed Penguin and Soggy Great White Shark. "
-                + "Animal Adjectives entertains through combining random adjectives with random animals which can have hilarious outcomes.",
-        [],
+                + "Animal Adjectives entertains through combining random adjectives with random animals which can have hilarious outcomes. Other features include:",
+        [
+            "Sharing to Facebook",
+            "New animal adjectives appear regularly as notifications",
+            "Favourites",
+            "Limited user settings"
+        ],
         "Images/AnimalAdjectives/CrustyBirmanScreen.png",
         "Animal Adjectives Screenshot - Crusty Birman",
         "https://play.google.com/store/apps/details?id=chrisb.animaladjectives&hl=en_GB",
@@ -125,7 +134,12 @@
     var mtgMirror = new ProjectElement(
         "MTG Mirror",
         "MTG Mirror is a web app for fans of the popular card game Magic: the Gathering. It simulates certain aspects of the game allowing players to practice.",
-        [],
+        [
+            "Proven to be a popular app with 40,000 - 60,000 sessions a month - mostly made up of returning visitors (66% returning June-July 2015)",
+            "Single page app built using AngularJS, the app is run completely on the client side",
+            "Uses app manifest to cache most of the app so it runs quickly after initial load, and notifies users when an update has been downloaded, prompting them to refresh",
+            "ChartJS used to display the player's stats"
+        ],
         "Images/MTGMirror/draftSimScreenshot.png",
         "Draft simulator screenshot",
         "http://mtgmirror.com",
@@ -168,8 +182,8 @@
             houseOwage,
             librarians,
             parabolaSoftware,
-            animalAdjetives,
             mtgMirror,
+            animalAdjetives,
             dissertation
         ];
     }
