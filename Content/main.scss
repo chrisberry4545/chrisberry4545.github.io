@@ -11,6 +11,7 @@ html, body {
     width: 100%;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    max-width:100%;
 }
 
 h1 {
@@ -256,11 +257,11 @@ h1 {
 }
 
 .signOffSection {
+    background: $timelineInnerColor;
+    padding: 3rem 1rem 3rem 1rem;
     .signOffInner {
-        padding: 3rem 1rem 3rem 1rem;
         color: white;
         max-width: 100%;
-        background: $timelineInnerColor;
         width: 100%;
         text-align: center;
 
