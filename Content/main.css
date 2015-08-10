@@ -118,7 +118,7 @@ h1 {
         .portfolio .projectCard .imageSection {
           text-align: center; } }
       .portfolio .projectCard .imageSection .projectImage {
-        border: 1px solid rgba(0, 0, 0, 0.3); }
+        /*border: 1px solid $lightDividerColor;*/ }
       .portfolio .projectCard .imageSection.isHidden {
         visibility: hidden; }
       .portfolio .projectCard .imageSection.bounceIn {

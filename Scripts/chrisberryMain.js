@@ -30,23 +30,40 @@
     var webSVG = timelineStartUrl + "web.svg";
     var androidSVG = timelineStartUrl + "android.svg";
     var uniSVG = timelineStartUrl + "university.svg";
+    var clockSVG = timelineStartUrl + "clock.svg";
 
     var githubSVG = generalStartUrl + "github.svg";
     var globeSVG = generalStartUrl + "globe.svg";
     var playSVG = generalStartUrl + "play.svg";
+
+    var bikeTrackerPebble = new ProjectElement(
+        "London TFL Bike Point Tracker",
+        "An app for Pebble Smartwatches which uses TFL data to point the user in the direction of the nearest London bike point",
+        [
+
+        ],
+        "Images/PebbleBikeTracker/londonbike.png",
+        "Image of the app on pebble",
+        null,
+        null,
+        null,
+        ["C", "JavaScript"],
+        "2015",
+        clockSVG
+        );
 
     var gbc = new ProjectElement(
         "Great British Chefs",
         "Working as part of a small team we delivered a whole new site design and custom built CMS solution which will allow Great British Chefs to release stunning content on a fast and responsive site. Some key parts of the sites I handled included:",
         [
             "User registration and login (with Facebook integration)",
-            "A complete user favouriting system (binder) which utilised HTML5 local storage alongside server storage so the site always felt fast",
+            "A complete user favouriting system (binder) which utilised HTML5 local storage alongside server storage to keep the site feeling fast",
             "User profile and settings",
             "A restaurant search web app",
             "Page recirculation",
             "Custom video players and image galleries",
             "Fast recipe filters",
-            "Many page templates"
+            "Page templates (Recipes, Recipe Collections, Restaurants etc.)"
         ],
         "Images/GBC/GBCHome.png",
         "Great British Chefs Homepage",
@@ -175,9 +192,10 @@
             githubUrl: "https://github.com/chrisberry4545",
             githubLogo: githubSVG
         };
-        this.personalDetails.blurb = 'A ' + this.personalDetails.jobTitle + ' living in and working ' + this.personalDetails.location + ".";
+        this.personalDetails.blurb = 'A ' + this.personalDetails.jobTitle + ' living and working ' + this.personalDetails.location + ".";
 
         this.projects = [
+            bikeTrackerPebble,
             gbc,
             houseOwage,
             librarians,
