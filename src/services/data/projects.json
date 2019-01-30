@@ -1,0 +1,182 @@
+{
+  "projects": [
+    {
+      "name": "London bike tracker",
+      "description": {
+        "text": "An app for Pebble Smartwatches which uses TFL data to find the bike point nearest to the user. The app then uses the watches compass to direct the user towards the bike point."
+      },
+      "image": {
+        "src": "/images/london-bike-tracker/london-bike-600x375.jpg",
+        "alt": "Image of the app on pebble"
+      },
+      "skills": [
+        "C",
+        "JavaScript"
+      ],
+      "year": "2015",
+      "icon": "/images/general/clock.svg",
+      "githubLink": "https://github.com/chrisberry4545/BikeTracker"
+    },
+    {
+      "name": "Great British Chefs",
+      "description": {
+        "text": "Working as part of a small team we delivered a whole new site design and custom built CMS solution which will allow Great British Chefs to release stunning content on a fast and responsive site. My work included:",
+        "bulletPoints": [
+          "User registration and login (with Facebook integration)",
+          "A user saving system which utilised HTML5 local storage alongside server storage to keep the site feeling fast",
+          "User profile and settings",
+          "A restaurant search web app",
+          "Page recirculation",
+          "Custom video players and image galleries",
+          "Fast recipe filters",
+          "Page templates (Recipes, Recipe Collections, Restaurants etc.)",
+          "Mentoring Junior staff"
+        ]
+      },
+      "image": {
+        "src": "/images/gbc/gbc-home-600x375.jpg",
+        "alt": "Great British Chefs Homepage"
+      },
+      "skills": [
+        "C# (MVC)",
+        "Javascript (KnockoutJS, JQuery)",
+        "SQL",
+        "CSS",
+        "HTML"
+      ],
+      "year": "2015",
+      "icon": "/images/general/cogs.svg"
+    },
+    {
+      "name": "House money management web app",
+      "description": {
+        "text": "Application I created to manage money with my housemates. It has solved the problem we had of tracking who owes who and provides useful information like payment histories."
+      },
+      "image": {
+        "src": "/images/house-money-management/house-money-management-screenshot-600x375.jpg",
+        "alt": "House money management image"
+      },
+      "skills": [
+        "C# (MVC)",
+        "SQL",
+        "Javascript",
+        "CSS",
+        "HTML"
+      ],
+      "year": "2015",
+      "icon": "/images/general/web.svg",
+      "githubLink": "https://github.com/chrisberry4545/HouseOwage"
+    },
+    {
+      "name": "The Librarians (band) Android app",
+      "description": {
+        "text": "The band, The Librarians, wanted to release their most recent EP as a mobile app. The app lets fans play the EP and read about the band. Features include:",
+        "bulletPoints": [
+          "Spinner to choose tracks",
+          "Full music controls",
+          "Tracks continue to play in a service when user leaves the app and can be accessed from the phone menu"
+        ]
+      },
+      "image": {
+        "src": "/images/librarians/librarians-tablet-screenshot-600x375.jpg",
+        "alt": "Librarians App tablet screenshot"
+      },
+      "skills": [
+        "Android"
+      ],
+      "year": "2014",
+      "icon": "/images/general/android.svg",
+      "githubLink": "https://github.com/chrisberry4545/LibrariansEP"
+    },
+    {
+      "name": "Animal Adjectives",
+      "description": {
+        "text": "Throbbing Goat, Lecherous Yellow Eyed Penguin and Soggy Great White Shark. Animal Adjectives entertains through combining random adjectives with random animals. Other features include:",
+        "bulletPoints": [
+          "Sharing to Facebook",
+          "New animal adjectives appear regularly as notifications",
+          "Favourites",
+          "Limited user settings"
+        ]
+      },
+      "image": {
+        "src": "/images/animal-adjectives/aa-tablet-screen-600x375.jpg",
+        "alt": "Animal Adjectives Screenshot"
+      },
+      "skills": [
+        "Android"
+      ],
+      "icon": "/images/general/android.svg",
+      "githubLink": "https://github.com/chrisberry4545/AnimalAdjectives"
+    },
+    {
+      "name": "MTG Mirror",
+      "description": {
+        "text": "MTG Mirror is a web app for fans of the popular card game Magic: the Gathering. It simulates certain aspects of the game for players to practice. I have since sold the site.",
+        "bulletPoints": [
+          "Proven to be a popular app with 70,000 - 100,000 sessions a month",
+          "Single page app built using AngularJS, the app does all the processing on the client side",
+          "Uses app manifest to cache most of the app so it runs quickly after initial load, and notifies users when an update has been downloaded, prompting them to refresh",
+          "ChartJS used to display the player's stats"
+        ]
+      },
+      "image": {
+        "src": "/images/mtg-mirror/draft-sim-screenshot-600x375.jpg",
+        "alt": "Draft simulator screenshot"
+      },
+      "skills": [
+        "Javascript (AngularJS)",
+        "CSS",
+        "HTML"
+      ],
+      "icon": "/images/general/web.svg",
+      "githubLink": "https://github.com/chrisberry4545/MTGWeb"
+    },
+    {
+      "name": "Parabola Software",
+      "description": {
+        "text": "While working at Parabola I produced software for a range of clients, including colleges, charities and housing associations. This included:",
+        "bulletPoints": [
+          "An Online Enrolment Application for a college which communicates with their main SharePoint site using Web API 2. The solution was later extended to allow payments via WorldPay. I took full ownership of the project and handled most of the analysis and development.",
+          "SharePoint layouts and controls for client websites.",
+          "A cloud based web application for caretakers to record fire safety checks on a mobile device. Reports were created for their head office from this data.",
+          "A cloud based web application for a charity to record details of contact with potential donors.",
+          "Upgrading Parabola’s website to be responsive while remaining fully compatible with Orchard CMS.",
+          "A tool to migrate data from Umbraco CMS to a SharePoint 2013 site.",
+          "Upgrades to an MVC College application."
+        ]
+      },
+      "image": {
+        "src": "/images/parabola/parabola-tablet-600x375.jpg",
+        "alt": "Parabola responsive website screenshot"
+      },
+      "skills": [
+        "C# (Web API 2, MVC)",
+        "Javascript (AngularJS, JQuery)",
+        "SQL",
+        "SharePoint",
+        "CSS",
+        "HTML"
+      ],
+      "year": "2013 - 2014",
+      "icon": "/images/general/cogs.svg",
+      "githubLink": "https://github.com/chrisberry4545/LibrariansEP"
+    },
+    {
+      "name": "MSc. Dissertation",
+      "description": {
+        "text": "For my MSc. Dissertation I studied the application of Reinforced Learning through self play to the game of Monopoly. I used this technique to produce an artificial intelligence which performed well against humans in a game of Monopoly."
+      },
+      "image": {
+        "src": "/images/dissertation/monopoly-combined-600x375.jpg",
+        "alt": "Example of Monopoly dissertation"
+      },
+      "link": "https://sites.google.com/site/chrisberry4545/dissertation",
+      "skills": [
+        "Java (Swing)"
+      ],
+      "year": "2013",
+      "icon": "/images/general/university.svg"
+    }
+  ]
+}

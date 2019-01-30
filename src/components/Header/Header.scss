@@ -1,0 +1,37 @@
+@import './../../styles/settings';
+@import './../../styles/tools';
+
+.c-header {
+  padding: 2rem 0.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,.19), 0 6px 6px rgba(0,0,0,.23);
+  @include mq($from: tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+  .c-header__animated-logo-wrapper {
+    width: 160px;
+    height: 160px;
+    margin: auto;
+  }
+
+  .c-header__full-name {
+    padding-top: 2rem;
+    font-weight: 300;
+  }
+
+  .c-header__job-title {
+    font-weight: 300;
+  }
+
+  .c-header__link {
+    display: block;
+    color: $primary-text-color;
+    transition: color 0s;
+    &:hover {
+      transition: color 0.2s;
+      color: lighten($primary-text-color, 15%);
+    }
+  }

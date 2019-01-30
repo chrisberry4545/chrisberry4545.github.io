@@ -1,86 +1,9 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Chris Berry - Full stack web developer</title>
-    <link href="Content/main.min.css" rel="stylesheet"/>
+    <title>Chris Berry - Full Stack JavaScript Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
-    <section data-bind="with: personalDetails" class="titleSection">
-        <h1 data-bind="text: name"></h1>
-        <h3 data-bind="text: blurb"></h3>
-        <h4 data-bind="foreach: keySkills" class="skillsSection">
-            <span class="skill" data-bind="text: $data"></span>
-        </h4>
-        <h4>
-            <a data-bind="attr: {href: email}, text: email"></a>
-        </h4>
-        <div>
-            <a class="mainBtn" data-bind="attr: {href: githubUrl }" target="_blank">
-                <img class="buttonIcon" data-bind="attr: {src: githubLogo}" alt="My Github">
-            </a>
-        </div>
-    </section>
-
-    <div class="portfolio" data-bind="template: { name: 'project-template', foreach: projects }"></div>
-    <script type="text/html" id="project-template">
-        <section class="projectCard">
-
-            <div class="timelineImage isHidden"><img data-bind="attr: {src: timelineImage }" /></div>
-
-            <div class="descriptionSection projectCardSection isHidden">
-                <h2><span data-bind="text: title"></span> <!--<span data-bind="text: year"></span>--></h2>
-                <h3 data-bind="text: year"></h3>
-                <p class="skillsSection">
-                    <!-- ko foreach: skills -->
-                    <span class="skill" data-bind="text: $data"></span>
-                    <!-- /ko -->
-                </p>
-
-
-                <p class="projDescription" data-bind="text: description"></p>
-
-                <ul data-bind="foreach: additionalDescBullets">
-                    <li data-bind="text: $data"></li>
-                </ul>
-            </div>
-
-            <div class="imageSection isHidden projectCardSection">
-                <img class="projectImage" data-bind="attr: {src: image, alt: imageAlt}" />
-
-                <div class="linkButtonDiv">
-                    <!-- ko if: link != null -->
-                    <a target="_blank" data-bind="attr: { href: link }" class="mainBtn">
-                        <img class="buttonIcon" data-bind="attr: { src: linkIcon, alt: linkName}" />
-                    </a>
-                    <!-- /ko -->
-                    <!-- ko if: githubLink != null -->
-                    <a target="_blank" data-bind="attr: { href: githubLink}" class="mainBtn">
-                        <img class="buttonIcon" data-bind="attr: { src: githubLinkIcon, alt: githubLinkText}" />
-                    </a>
-                    <!-- /ko -->
-                </div>
-            </div>
-
-            <div class="clear"></div>
-        </section>
-    </script>
-
-    <section class="signOffSection" data-bind="with: personalDetails">
-        <div class="signOffInner">
-            <a data-bind="attr: {href: email}">
-                <h4>
-                    <span data-bind="text: name"></span> - <span data-bind="text: location"></span>
-                    <br />
-                    <span data-bind="text: email"></span>
-                </h4>
-            </a>
-        </div>
-    </section>
-
-    <script src="Scripts/jquery.min.js"></script>
-    <script src="Scripts/knockout-3.3.0.js"></script>
-    <script src="Scripts/chrisberryMain.js"></script>
 </body>
 </html>
