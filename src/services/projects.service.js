@@ -1,9 +1,9 @@
 import projectData from './data/projects.json';
 
-function getProjects() {
+function getProjects () {
   return projectData.projects;
 }
 
 export {
   getProjects
-}
+};

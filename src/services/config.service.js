@@ -1,9 +1,9 @@
 import config from './data/config.json';
 
-function getConfig() {
+function getConfig () {
   return config;
 }
 
 export {
   getConfig
-}
+};

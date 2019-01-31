@@ -4,7 +4,7 @@ import { Header } from '../Header/Header';
 import { Projects } from '../Projects/Projects';
 
 const App = () => (
-  <div className="c-app">
+  <div className='c-app'>
     <Header />
     <Projects />
   </div>

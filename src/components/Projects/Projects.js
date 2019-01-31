@@ -11,10 +11,10 @@ export const Projects = () => (
         image,
         name
       }) => (
-        <div className='c-projects__project' key={ name }>
+        <div className='c-projects__project' key={name}>
           <div className='c-projects__main-image-wrapper'>
             <div className='c-projects__main-image'
-              style={ { backgroundImage: `url(${image.src})` } }>
+              style={{ backgroundImage: `url(${image.src})` }}>
               <h5 className='c-projects__name'>{ name }</h5>
             </div>
           </div>

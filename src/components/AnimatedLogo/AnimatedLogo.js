@@ -63,15 +63,15 @@ const animate = (
       )
     ));
   }
-}
+};
 
 export class AnimatedLogo extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.canvasRef = React.createRef();
   }
 
-  componentDidMount() {
+  componentDidMount () {
     const canvas = this.canvasRef.current;
     const canvasContext = canvas.getContext('2d');
     const width = canvas.offsetWidth;
@@ -91,12 +91,12 @@ export class AnimatedLogo extends Component {
           x: 0, y: halfHeight
         },
         end: {
-          x: 0, y: halfHeight,
+          x: 0, y: halfHeight
         }
       },
       {
         current: {
-          x: halfWidth, y: halfHeight,
+          x: halfWidth, y: halfHeight
         },
         end: {
           x: halfWidth, y: height
@@ -166,9 +166,9 @@ export class AnimatedLogo extends Component {
     }, parseInt(timeBeforeAnimate));
   }
 
-  render() {
+  render () {
     return (
-      <canvas className='c-animated-logo' ref={ this.canvasRef } />
+      <canvas className='c-animated-logo' ref={this.canvasRef} />
     );
   }
 }
