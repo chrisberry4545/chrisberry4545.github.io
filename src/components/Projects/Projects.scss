@@ -7,10 +7,11 @@ $project-break-point-2: 1155px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 2rem;
+  padding: 2rem 0.75rem;
+  position: relative;
   @include mq($from: tablet) {
     overflow-y: auto;
-    padding-top: 0;
+    padding: 0;
   }
 }
 
@@ -22,11 +23,6 @@ $project-break-point-2: 1155px;
     @media (min-width: $project-break-point-2) {
       width: 33%;
     }
-  }
-
-  .c-projects__description-bullets {
-    list-style: none;
-    text-align: left;
   }
 
   .c-projects__main-image-wrapper {
@@ -79,16 +75,4 @@ $project-break-point-2: 1155px;
       opacity: 0;
       transform: translate(-50%, 0%);
     }
-  }
-
-  .c-projects__skills {
-    list-style: none;
-    text-align: left;
-  }
-
-  .c-projects__icon {
-    width: 20px;
-    background-color: black;
-    padding: 10px;
-    border-radius: 50%;
   }

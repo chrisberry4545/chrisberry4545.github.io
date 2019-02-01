@@ -6,6 +6,9 @@ import {
 import {
   AnimatedLogo
 } from '../AnimatedLogo/AnimatedLogo';
+import {
+  Link
+} from '../elements';
 
 export const Header = () => {
   const {
@@ -24,8 +27,8 @@ export const Header = () => {
         <h2 className='c-header__job-title'>{ jobTitle }</h2>
       </div>
       <div>
-        <a className='c-header__link' href={gitHub}>GitHub</a>
-        <a className='c-header__link' href={email}>{ email }</a>
+        <Link href={gitHub} target='_blank'>Github</Link>
+        <Link href={`mailto:${email}`}>{ email }</Link>
       </div>
     </header>
   );

@@ -1,0 +1,121 @@
+@import './../../styles/tools';
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+.c-project-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 0;
+}
+
+  .c-project-modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparentize(#000000, 0.8);
+  }
+
+  .c-project-modal__inner {
+    background: #FFFFFF;
+    max-height: 90vh;
+    width: 90vw;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+  }
+
+  .c-project__modal__image-wrapper {
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .c-project__modal__image {
+    width: 100%;
+  }
+
+  .c-project-modal__icon {
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    background-color: #000000;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .c-project-modal__close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background: none;
+    display: flex;
+    cursor: pointer;
+    border-radius: 50%;
+    background: rgba(0,0,0, 0.5);
+    padding: 0.2rem;
+  }
+
+  .c-project-modal__details {
+    padding: 2rem;
+    overflow-y: auto;
+    text-align: left;
+  }
+
+  .c-project-modal__title {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .c-project-modal__skills {
+    font-weight: 400;
+    font-size: 1rem;
+    list-style: none;
+    margin: 0.75rem 0;
+  }
+
+    .c-project-modal__skills__item {
+      display: inline;
+      &::after {
+        content: '/';
+        margin: 0 0.2rem;
+      }
+      &:last-child::after {
+        content: none;
+      }
+    }
+
+  .c-project-modal__description {
+    font-weight: 300;
+    margin: 0.75rem 0;
+  }
+
+  .c-project-modal__description-bullets {
+    // list-style: none;
+    margin-top: 1rem;
+    font-weight: 300;
+  }
