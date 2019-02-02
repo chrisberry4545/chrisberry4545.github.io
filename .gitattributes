@@ -1,2 +1,7 @@
 package-lock.json binary
 /docs
+asset-manifest.json
+favicon.ico
+manifest.json
+index.html
+service-worker.js

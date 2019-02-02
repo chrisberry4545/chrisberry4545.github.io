@@ -14,7 +14,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "gh-pages": "npm run build && node ./release/copy-build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "semistandard './src/**/*.js' --verbose | snazzy",
@@ -34,8 +33,5 @@
     "ncp": "^2.0.0",
     "semistandard": "^13.0.1",
     "snazzy": "^8.0.0"
-  },
-  "git-pre-hooks": {
-    "pre-push": "npm run lint"
   }
 }
