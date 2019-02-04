@@ -4,11 +4,13 @@ import {
   getConfig
 } from '../../services';
 import {
-  AnimatedLogo
-} from '../AnimatedLogo/AnimatedLogo';
+  AnimatedLogo,
+  TextHeadingLarge,
+  TextHeadingMedium
+} from '../../elements';
 import {
   Link
-} from '../elements';
+} from '../../molecules';
 
 export const Header = () => {
   const {
@@ -23,8 +25,12 @@ export const Header = () => {
         <div className='c-header__animated-logo-wrapper'>
           <AnimatedLogo color='#DDDDDD' />
         </div>
-        <h1 className='c-header__full-name'>{ fullName }</h1>
-        <h2 className='c-header__job-title'>{ jobTitle }</h2>
+        <h1 className='c-header__full-name'>
+          <TextHeadingLarge>{ fullName }</TextHeadingLarge>
+        </h1>
+        <h2>
+          <TextHeadingMedium>{ jobTitle }</TextHeadingMedium>
+        </h2>
       </div>
       <div>
         <Link href={gitHub} target='_blank'>Github</Link>

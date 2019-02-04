@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import './ProjectsTemplate.scss';
+import { ProjectModal } from '../../organisms';
 import {
-  getProjects
-} from '../../services';
-import './Projects.scss';
-import { ProjectModal } from '../ProjectModal/ProjectModal';
+  TextHeadingLarge
+} from '../../elements';
 
-export class Projects extends Component {
+export class ProjectsTemplate extends Component {
   constructor (props) {
     super(props);
     this.state = {
@@ -21,27 +21,28 @@ export class Projects extends Component {
 
   render () {
     return (
-      <section className='c-projects'>
+      <section className='c-projects-template'>
         {
-          getProjects().map((project) => {
+          this.props.projects.map((project) => {
             const {
               image,
               name
             } = project;
             return (
-              <div className='c-projects__project' key={name}>
+              <div className='c-projects-template__project' key={name}>
                 <ProjectModal {
                 ...{
                   ...project,
                   onCloseClick: () => this.showProject(null),
                   isVisible: name === this.state.projectModalDisplayed
                 }} />
-                <div
-                  onClick={() => this.showProject(name)}
-                  className='c-projects__main-image-wrapper'>
-                  <div className='c-projects__main-image'
+                <div onClick={() => this.showProject(name)}
+                  className='c-projects-template__main-image-wrapper'>
+                  <div className='c-projects-template__main-image'
                     style={{ backgroundImage: `url(${image.src})` }}>
-                    <h5 className='c-projects__name'>{ name }</h5>
+                    <h5 className='c-projects-template__name'>
+                      <TextHeadingLarge>{ name }</TextHeadingLarge>
+                    </h5>
                   </div>
                 </div>
               </div>

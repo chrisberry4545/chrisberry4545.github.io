@@ -3,7 +3,7 @@
 $project-break-point-1: 900px;
 $project-break-point-2: 1155px;
 
-.c-projects {
+.c-projects-template {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +15,7 @@ $project-break-point-2: 1155px;
   }
 }
 
-  .c-projects__project {
+  .c-projects-template__project {
     width: 100%;
     @media (min-width: $project-break-point-1) {
       width: 50%;
@@ -25,13 +25,13 @@ $project-break-point-2: 1155px;
     }
   }
 
-  .c-projects__main-image-wrapper {
+  .c-projects-template__main-image-wrapper {
     box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
     margin: 0.2rem;
     padding: 0.3rem;
   }
 
-  .c-projects__main-image {
+  .c-projects-template__main-image {
     cursor: pointer;
     position: relative;
     height: 263px;
@@ -54,22 +54,19 @@ $project-break-point-2: 1155px;
       &::before {
         opacity: 1;
       }
-      .c-projects__name {
+      .c-projects-template__name {
         opacity: 1;
         transform: translate(-50%, -50%);
       }
     }
   }
 
-  .c-projects__name {
+  .c-projects-template__name {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #FFFFFF;
-    font-size: 2rem;
-    font-weight: 300;
-    margin: 0;
     transition: opacity 0.2s, transform 0.3s;
     @media (min-width: $project-break-point-2) {
       opacity: 0;
