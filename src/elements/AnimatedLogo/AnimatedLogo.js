@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 import './AnimatedLogo.scss';
 
 const adjustPoint = (startPoint, endPoint, moveAmount) => {
@@ -68,7 +68,7 @@ const animate = (
 export class AnimatedLogo extends Component {
   constructor (props) {
     super(props);
-    this.canvasRef = React.createRef();
+    this.canvasRef = createRef();
   }
 
   componentDidMount () {
