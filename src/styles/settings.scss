@@ -1,2 +1,9 @@
 $primary-text-color: #000000;
 $icon-size: 24px;
+$project-image-height: 263px;
+
+$mq-breakpoints: (
+    mobile:  320px,
+    tablet:  950px,
+    desktop: 1050px
+);

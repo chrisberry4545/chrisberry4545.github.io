@@ -4,6 +4,16 @@ import { ProjectModal } from '../../organisms';
 import {
   TextHeadingLarge
 } from '../../elements';
+import {
+  DEFAULT_ANIMATION_TIME,
+  fadeInAnimation
+} from '../../helpers';
+import { PoseGroup } from 'react-pose';
+
+const FadeInAnimation = fadeInAnimation({
+  enterDuration: 0,
+  enterDelay: DEFAULT_ANIMATION_TIME
+});
 
 export class ProjectsTemplate extends Component {
   constructor (props) {
@@ -28,21 +38,31 @@ export class ProjectsTemplate extends Component {
               image,
               name
             } = project;
+            const isVisible = name === this.state.projectModalDisplayed;
             return (
               <div className='c-projects-template__project' key={name}>
-                <ProjectModal {
-                ...{
-                  ...project,
-                  onCloseClick: () => this.showProject(null),
-                  isVisible: name === this.state.projectModalDisplayed
-                }} />
-                <div onClick={() => this.showProject(name)}
-                  className='c-projects-template__main-image-wrapper'>
-                  <div className='c-projects-template__main-image'
-                    style={{ backgroundImage: `url(${image.src})` }}>
-                    <h5 className='c-projects-template__name'>
-                      <TextHeadingLarge>{ name }</TextHeadingLarge>
-                    </h5>
+                <div className='c-projects-template__main-image-wrapper'>
+                  <div
+                    className='c-projects-template__main-image-wrapper__inner'>
+                    <ProjectModal {
+                    ...{
+                      ...project,
+                      onCloseClick: () => this.showProject(null),
+                      isVisible
+                    }} />
+                    <PoseGroup>
+                      {
+                        !isVisible &&
+                        <FadeInAnimation key='projects-template-fade-in'
+                          className='c-projects-template__main-image'
+                          onClick={() => this.showProject(name)}
+                          style={{ backgroundImage: `url(${image.src})` }}>
+                          <h5 className='c-projects-template__name'>
+                            <TextHeadingLarge>{ name }</TextHeadingLarge>
+                          </h5>
+                        </FadeInAnimation>
+                      }
+                    </PoseGroup>
                   </div>
                 </div>
               </div>

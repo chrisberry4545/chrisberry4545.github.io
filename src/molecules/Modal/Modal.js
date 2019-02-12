@@ -1,42 +1,53 @@
-import React from 'react';
+import React, { Component, createRef } from 'react';
 import './Modal.scss';
-import posed, { PoseGroup } from 'react-pose';
 import {
   CrossIcon
 } from './../../elements';
+import {
+  fadeInOutAnimation,
+  moveToCenterAnimation
+} from '../../helpers';
+import { PoseGroup } from 'react-pose';
 
-const PosedModal = posed.div({
-  enter: { y: '-50%', x: '-50%', opacity: 1 },
-  exit: { y: '-10%', x: '-50%', opacity: 0 }
+const FadeInOutAnimation = fadeInOutAnimation();
+const FadeInOutButtonAnimation = fadeInOutAnimation({
+  type: 'button'
 });
+const MoveToCenterAnimation = moveToCenterAnimation();
 
-const PosedOverlay = posed.div({
-  enter: { opacity: 1 },
-  exit: { opacity: 0 }
-});
+export class Modal extends Component {
+  constructor (props) {
+    super(props);
+    this.modalRef = createRef();
+  }
 
-export const Modal = ({
-  children,
-  onCloseClick,
-  isVisible
-}) => (
-  <div className='c-modal'>
-    <PoseGroup>
-      {
-        isVisible && [
-          <PosedOverlay key='overlay' className='c-modal__overlay'
-            onClick={onCloseClick} />,
-          <PosedModal key='modal' className='c-modal__inner'>
-            { children }
+  render () {
+    return (
+      <div className='c-modal'>
+        <PoseGroup>
+          {
+            this.props.isVisible &&
+              <FadeInOutAnimation key='modal-overlay'
+                className='c-modal__overlay'
+                onClick={this.props.onCloseClick} />
+          }
+        </PoseGroup>
+        <MoveToCenterAnimation className={`c-modal__inner ${
+          this.props.isVisible && 'c-modal__inner--visible'
+        }`} ref={this.modalRef} pose={this.props.isVisible ? 'visible' : 'hidden'} poseRef={this.modalRef}>
+          { this.props.children }
+          <PoseGroup>
             {
-              onCloseClick && <button onClick={onCloseClick}
+              this.props.onCloseClick && this.props.isVisible &&
+              <FadeInOutButtonAnimation key='modal-close-btn'
+                onClick={this.props.onCloseClick}
                 className='c-modal__close-btn'>
                 <CrossIcon />
-              </button>
+              </FadeInOutButtonAnimation>
             }
-          </PosedModal>
-        ]
-      }
-    </PoseGroup>
-  </div>
-);
+          </PoseGroup>
+        </MoveToCenterAnimation>
+      </div>
+    );
+  }
+}

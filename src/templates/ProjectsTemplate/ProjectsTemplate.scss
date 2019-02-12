@@ -1,7 +1,8 @@
+@import './../../styles/settings';
 @import './../../styles/tools';
 
 $project-break-point-1: 900px;
-$project-break-point-2: 1155px;
+$project-break-point-2: 1300px;
 
 .c-projects-template {
   width: 100%;
@@ -31,12 +32,17 @@ $project-break-point-2: 1155px;
     padding: 0.3rem;
   }
 
+  .c-projects-template__main-image-wrapper__inner {
+    position: relative;
+    height: $project-image-height;
+  }
+
   .c-projects-template__main-image {
     cursor: pointer;
     position: relative;
-    height: 263px;
     background-size: cover;
     background-position: center;
+    height: 100%;
     &::before {
       content: '';
       position: absolute;
