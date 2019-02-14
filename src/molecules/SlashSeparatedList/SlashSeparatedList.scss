@@ -6,7 +6,7 @@
 }
 
   .c-slash-separated-list__item {
-    display: inline;
+    display: inline-block;
     &::after {
       content: '/';
       margin: 0 0.2rem;

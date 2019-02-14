@@ -20,9 +20,55 @@
       ],
       "year": "2019",
       "icon": "/images/general/android.svg",
-      "githubLinks": [
-        "https://github.com/chrisberry4545/seasonal-react-native",
-        "https://github.com/chrisberry4545/seasonal-backend"
+      "links": [
+        {
+          "href": "https://github.com/chrisberry4545/seasonal-react-native"
+        },
+        {
+          "href": "https://github.com/chrisberry4545/seasonal-backend"
+        }
+      ]
+    },
+    {
+      "name": "Kite",
+      "description": {
+        "text": "Building apps which let users customize products with their own imagery and buy them, or sell them to others",
+        "bulletPoints": [
+          "White label web app for ordering items such as clothing or wall art",
+          "Photo book builder application",
+          "Shopify App so brands can easily create and sell merchandise",
+          "Product catalog aimed at potential partners"
+        ]
+      },
+      "image": {
+        "src": "/images/kite/kite-600x375.jpg",
+        "alt": "Kite logo"
+      },
+      "skills": [
+        "TypeScript (Angular 7, VueJs)",
+        "NodeJs",
+        "Webpack",
+        "Docker",
+        "Redis",
+        "CircleCi",
+        "Heroku",
+        "AWS"
+      ],
+      "year": "2018",
+      "icon": "/images/general/cogs.svg",
+      "links": [
+        {
+          "href": "https://photobook.kite.ly/kite/"
+        },
+        {
+          "href": "https://print.kite.ly/kite"
+        },
+        {
+          "href": "https://apps.shopify.com/kite-shopify-plugin?surface_detail=kite&surface_inter_position=1&surface_intra_position=1&surface_type=search"
+        },
+        {
+          "href": "https://catalog.kite.ly"
+        }
       ]
     },
     {
@@ -40,7 +86,9 @@
       ],
       "year": "2015",
       "icon": "/images/general/clock.svg",
-      "githubLinks": ["https://github.com/chrisberry4545/BikeTracker"]
+      "links": [{
+        "href": "https://github.com/chrisberry4545/BikeTracker"
+      }]
     },
     {
       "name": "Great British Chefs",
@@ -90,7 +138,9 @@
       ],
       "year": "2015",
       "icon": "/images/general/web.svg",
-      "githubLinks": ["https://github.com/chrisberry4545/HouseOwage"]
+      "links": [{
+        "href": "https://github.com/chrisberry4545/HouseOwage"
+      }]
     },
     {
       "name": "The Librarians (band) Android app",
@@ -111,7 +161,9 @@
       ],
       "year": "2014",
       "icon": "/images/general/android.svg",
-      "githubLinks": ["https://github.com/chrisberry4545/LibrariansEP"]
+      "links": [{
+        "href": "https://github.com/chrisberry4545/LibrariansEP"
+      }]
     },
     {
       "name": "Animal Adjectives",
@@ -132,7 +184,9 @@
         "Android"
       ],
       "icon": "/images/general/android.svg",
-      "githubLinks": ["https://github.com/chrisberry4545/AnimalAdjectives"]
+      "links": [{
+        "href": "https://github.com/chrisberry4545/AnimalAdjectives"
+      }]
     },
     {
       "name": "MTG Mirror",
@@ -155,7 +209,9 @@
         "HTML"
       ],
       "icon": "/images/general/web.svg",
-      "githubLinks": ["https://github.com/chrisberry4545/MTGWeb"]
+      "links": [{
+        "href": "https://github.com/chrisberry4545/MTGWeb"
+      }]
     },
     {
       "name": "Parabola Software",
@@ -185,7 +241,9 @@
       ],
       "year": "2013 - 2014",
       "icon": "/images/general/cogs.svg",
-      "githubLinks": ["https://github.com/chrisberry4545/LibrariansEP"]
+      "links": [{
+        "href": "https://github.com/chrisberry4545/LibrariansEP"
+      }]
     },
     {
       "name": "MSc. Dissertation",

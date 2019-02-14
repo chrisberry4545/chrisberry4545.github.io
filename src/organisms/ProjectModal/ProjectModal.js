@@ -29,7 +29,7 @@ const FadeInOutImgAnimation = fadeInOutAnimation({
 
 export const ProjectModal = ({
   description,
-  githubLinks,
+  links,
   icon,
   image,
   isVisible,
@@ -57,10 +57,10 @@ export const ProjectModal = ({
         </p>
         <BulletList list={description.bulletPoints} />
         {
-          githubLinks && githubLinks.map((href) => (
+          links && links.map(({ href, name }) => (
             <Link key={href}
               href={href} rel='noopener noreferrer' target='_blank'>
-              { href }
+              { name || href }
             </Link>
           ))
         }
