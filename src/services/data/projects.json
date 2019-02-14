@@ -1,6 +1,31 @@
 {
   "projects": [
     {
+      "name": "Eat Seasonal",
+      "description": {
+        "text": "Displays the fruit and veg currently in season, and suggests recipe ideas",
+        "bulletPoints": [
+          "React native app",
+          "NodeJs back end, retrieving data stored in Airtable"
+        ]
+      },
+      "image": {
+        "src": "/images/eat-seasonal/eat-seasonal-600x375.jpg",
+        "alt": "Eat Seasonal app on Android"
+      },
+      "skills": [
+        "React Native",
+        "NodeJs",
+        "JavaScript"
+      ],
+      "year": "2019",
+      "icon": "/images/general/android.svg",
+      "githubLinks": [
+        "https://github.com/chrisberry4545/seasonal-react-native",
+        "https://github.com/chrisberry4545/seasonal-backend"
+      ]
+    },
+    {
       "name": "London bike tracker",
       "description": {
         "text": "An app for Pebble Smartwatches which uses TFL data to find the bike point nearest to the user. The app then uses the watches compass to direct the user towards the bike point."
@@ -15,7 +40,7 @@
       ],
       "year": "2015",
       "icon": "/images/general/clock.svg",
-      "githubLink": "https://github.com/chrisberry4545/BikeTracker"
+      "githubLinks": ["https://github.com/chrisberry4545/BikeTracker"]
     },
     {
       "name": "Great British Chefs",
@@ -65,7 +90,7 @@
       ],
       "year": "2015",
       "icon": "/images/general/web.svg",
-      "githubLink": "https://github.com/chrisberry4545/HouseOwage"
+      "githubLinks": ["https://github.com/chrisberry4545/HouseOwage"]
     },
     {
       "name": "The Librarians (band) Android app",
@@ -86,7 +111,7 @@
       ],
       "year": "2014",
       "icon": "/images/general/android.svg",
-      "githubLink": "https://github.com/chrisberry4545/LibrariansEP"
+      "githubLinks": ["https://github.com/chrisberry4545/LibrariansEP"]
     },
     {
       "name": "Animal Adjectives",
@@ -107,7 +132,7 @@
         "Android"
       ],
       "icon": "/images/general/android.svg",
-      "githubLink": "https://github.com/chrisberry4545/AnimalAdjectives"
+      "githubLinks": ["https://github.com/chrisberry4545/AnimalAdjectives"]
     },
     {
       "name": "MTG Mirror",
@@ -130,7 +155,7 @@
         "HTML"
       ],
       "icon": "/images/general/web.svg",
-      "githubLink": "https://github.com/chrisberry4545/MTGWeb"
+      "githubLinks": ["https://github.com/chrisberry4545/MTGWeb"]
     },
     {
       "name": "Parabola Software",
@@ -160,7 +185,7 @@
       ],
       "year": "2013 - 2014",
       "icon": "/images/general/cogs.svg",
-      "githubLink": "https://github.com/chrisberry4545/LibrariansEP"
+      "githubLinks": ["https://github.com/chrisberry4545/LibrariansEP"]
     },
     {
       "name": "MSc. Dissertation",
