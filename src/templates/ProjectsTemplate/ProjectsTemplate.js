@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './ProjectsTemplate.scss';
 import { ProjectModal } from '../../organisms';
 import {
+  BackgroundImageWithLoadingSpinner
+} from '../../molecules';
+import {
   TextHeadingLarge
 } from '../../elements';
 import {
@@ -55,11 +58,12 @@ export class ProjectsTemplate extends Component {
                         !isVisible &&
                         <FadeInAnimation key='projects-template-fade-in'
                           className='c-projects-template__main-image'
-                          onClick={() => this.showProject(name)}
-                          style={{ backgroundImage: `url(${image.src})` }}>
-                          <h5 className='c-projects-template__name'>
-                            <TextHeadingLarge>{ name }</TextHeadingLarge>
-                          </h5>
+                          onClick={() => this.showProject(name)}>
+                          <BackgroundImageWithLoadingSpinner src={image.src}>
+                            <h5 className='c-projects-template__name'>
+                              <TextHeadingLarge>{ name }</TextHeadingLarge>
+                            </h5>
+                          </BackgroundImageWithLoadingSpinner>
                         </FadeInAnimation>
                       }
                     </PoseGroup>

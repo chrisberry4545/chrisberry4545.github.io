@@ -20,13 +20,3 @@
   .c-header__full-name {
     font-weight: 300;
   }
-
-  .c-header__link {
-    display: block;
-    color: $primary-text-color;
-    transition: color 0s;
-    &:hover {
-      transition: color 0.2s;
-      color: lighten($primary-text-color, 15%);
-    }
-  }

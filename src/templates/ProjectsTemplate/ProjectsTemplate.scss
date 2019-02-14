@@ -40,8 +40,6 @@ $project-break-point-2: 1300px;
   .c-projects-template__main-image {
     cursor: pointer;
     position: relative;
-    background-size: cover;
-    background-position: center;
     height: 100%;
     &::before {
       content: '';

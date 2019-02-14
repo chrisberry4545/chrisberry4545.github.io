@@ -1,3 +1,5 @@
+export * from './BackgroundImageWithLoadingSpinner/BackgroundImageWithLoadingSpinner';
+
 export * from './BulletList/BulletList';
 
 export * from './Header/Header';
