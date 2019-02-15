@@ -44,7 +44,7 @@ export class BackgroundImageWithLoadingSpinner extends Component {
               { this.props.children }
             </FadeInOutAnimation>
             : <FadeInOutAnimation key='loading-spinner-fade-in-out'
-              className='c-background-image-with-loading-spinner__spinner' >
+              className='c-background-image-with-loading-spinner'>
               <LoadingSpinner />
             </FadeInOutAnimation>
         }

@@ -2,11 +2,7 @@
   background-size: cover;
   background-position: center;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-  .c-background-image-with-loading-spinner__spinner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
