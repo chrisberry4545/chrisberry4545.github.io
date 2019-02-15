@@ -9,7 +9,8 @@ import {
 } from '../../helpers';
 import { PoseGroup } from 'react-pose';
 
-const FadeInOutAnimation = fadeInOutAnimation();
+const ModalOverlayFadeInOutAnimation = fadeInOutAnimation();
+
 const FadeInOutButtonAnimation = fadeInOutAnimation({
   type: 'button'
 });
@@ -27,7 +28,7 @@ export class Modal extends Component {
         <PoseGroup>
           {
             this.props.isVisible &&
-              <FadeInOutAnimation key='modal-overlay'
+              <ModalOverlayFadeInOutAnimation key='modal-overlay'
                 className='c-modal__overlay'
                 onClick={this.props.onCloseClick} />
           }
