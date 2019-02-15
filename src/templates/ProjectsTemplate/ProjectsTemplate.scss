@@ -42,6 +42,7 @@ $project-break-point-2: 1300px;
     position: relative;
     height: 100%;
     &::before {
+      z-index: 1;
       content: '';
       position: absolute;
       top: 0;
@@ -72,6 +73,7 @@ $project-break-point-2: 1300px;
     transform: translate(-50%, -50%);
     color: #FFFFFF;
     transition: opacity 0.2s, transform 0.3s;
+    z-index: 1;
     @media (min-width: $project-break-point-2) {
       opacity: 0;
       transform: translate(-50%, 0%);

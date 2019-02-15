@@ -26,16 +26,3 @@ export const fadeInOutAnimation = ({
     }
   }
 });
-
-export const fadeInAnimation = ({
-  enterDelay = 0,
-  exitDelay = 0,
-  enterDuration = DEFAULT_ANIMATION_TIME
-} = {}) => (
-  fadeInOutAnimation({
-    enterDelay,
-    exitDelay,
-    enterDuration,
-    exitDuration: 0
-  })
-);

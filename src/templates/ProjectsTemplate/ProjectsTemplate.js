@@ -7,6 +7,16 @@ import {
 import {
   TextHeadingLarge
 } from '../../elements';
+import {
+  DEFAULT_ANIMATION_TIME,
+  fadeInOutAnimation
+} from './../../helpers';
+
+const DelayedFadeInAnimation = fadeInOutAnimation({
+  enterDuration: 0,
+  exitDuration: 0,
+  enterDelay: DEFAULT_ANIMATION_TIME
+});
 
 export class ProjectsTemplate extends Component {
   constructor (props) {
@@ -31,7 +41,7 @@ export class ProjectsTemplate extends Component {
               image,
               name
             } = project;
-            const isVisible = name === this.state.projectModalDisplayed;
+            const isModalVisible = name === this.state.projectModalDisplayed;
             return (
               <div className='c-projects-template__project' key={name}>
                 <div className='c-projects-template__main-image-wrapper'>
@@ -41,19 +51,18 @@ export class ProjectsTemplate extends Component {
                     ...{
                       ...project,
                       onCloseClick: () => this.showProject(null),
-                      isVisible
+                      isVisible: isModalVisible
                     }} />
-                    {
-                      !isVisible &&
-                      <div className='c-projects-template__main-image'
-                        onClick={() => this.showProject(name)}>
-                        <BackgroundImageWithLoadingSpinner src={image.src}>
-                          <h5 className='c-projects-template__name'>
-                            <TextHeadingLarge>{ name }</TextHeadingLarge>
-                          </h5>
-                        </BackgroundImageWithLoadingSpinner>
-                      </div>
-                    }
+                    <DelayedFadeInAnimation
+                      pose={isModalVisible ? 'exit' : 'enter'}
+                      key='project-template-main-image-delayed-fade'
+                      className='c-projects-template__main-image'
+                      onClick={() => this.showProject(name)}>
+                      <BackgroundImageWithLoadingSpinner src={image.src} />
+                      <h5 className='c-projects-template__name'>
+                        <TextHeadingLarge>{ name }</TextHeadingLarge>
+                      </h5>
+                    </DelayedFadeInAnimation>
                   </div>
                 </div>
               </div>
