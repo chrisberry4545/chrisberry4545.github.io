@@ -58,10 +58,11 @@ export const ProjectModal = ({
         <BulletList list={description.bulletPoints} />
         {
           links && links.map(({ href, name }) => (
-            <Link key={href}
-              href={href} rel='noopener noreferrer' target='_blank'>
-              { name || href }
-            </Link>
+            <div className='c-project-modal__link-container' key={href}>
+              <Link href={href} rel='noopener noreferrer' target='_blank'>
+                { name || href }
+              </Link>
+            </div>
           ))
         }
       </div>
