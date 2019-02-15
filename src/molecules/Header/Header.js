@@ -28,7 +28,7 @@ export const Header = () => {
         <h1 className='c-header__full-name'>
           <TextHeadingLarge>{ fullName }</TextHeadingLarge>
         </h1>
-        <h2>
+        <h2 className='c-header__job-title'>
           <TextHeadingMedium>{ jobTitle }</TextHeadingMedium>
         </h2>
       </div>
