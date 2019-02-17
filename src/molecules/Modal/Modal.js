@@ -4,6 +4,7 @@ import {
   CrossIcon
 } from './../../elements';
 import {
+  DEFAULT_ANIMATION_TIME,
   fadeInOutAnimation,
   moveToCenterAnimation
 } from '../../helpers';
@@ -12,6 +13,7 @@ import { PoseGroup } from 'react-pose';
 const ModalOverlayFadeInOutAnimation = fadeInOutAnimation();
 
 const FadeInOutButtonAnimation = fadeInOutAnimation({
+  enterDelay: DEFAULT_ANIMATION_TIME,
   type: 'button'
 });
 const MoveToCenterAnimation = moveToCenterAnimation();
