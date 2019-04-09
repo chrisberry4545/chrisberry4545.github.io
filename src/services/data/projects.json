@@ -6,6 +6,7 @@
         "text": "Displays the fruit and veg currently in season, and suggests recipe ideas",
         "bulletPoints": [
           "React native app",
+          "Web version sharing code with React native app",
           "NodeJs back end, retrieving data stored in Airtable"
         ]
       },
@@ -21,6 +22,12 @@
       "year": "2019",
       "icon": "/images/general/android.svg",
       "links": [
+        {
+          "href": "http://eat-seasonal.co.uk"
+        },
+        {
+          "href": "https://github.com/chrisberry4545/seasonal-web"
+        },
         {
           "href": "https://github.com/chrisberry4545/seasonal-react-native"
         },
