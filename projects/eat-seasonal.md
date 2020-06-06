@@ -1,0 +1,16 @@
+---
+pageTitle: Eat Seasonal
+date: 2018-11-22
+image: ./images/projects/eat-seasonal/eat-seasonal-mobile-rotated.png
+imageLarge: ./images/projects/eat-seasonal/eat-seasonal-all.png
+
+githubLink: https://github.com/chrisberry4545/seasonal
+iosAppStoreLink: https://apps.apple.com/us/app/eat-seasonal/id1496551124?ls=1
+playStoreLink: https://play.google.com/store/apps/details?id=com.chrisbdev.seasonal
+webLink: https://eat-seasonal.co.uk
+
+---
+View which fruit and vegetables are currently in season. Includes recipes ideas and nutritional information.
+
+Available on the iOS, Android or on the web.
+
