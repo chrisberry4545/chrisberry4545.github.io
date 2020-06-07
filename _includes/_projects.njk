@@ -38,6 +38,12 @@
             Website
           </a>
         {% endif %}
+        {% if project.data.downloadLink %}
+          <a class="c-btn" href={{project.data.downloadLink}} target="_blank">
+            <i class="c-btn__icon">{% include icons/_download.svg %}</i>
+            Download
+          </a>
+        {% endif %}
       </div>
 
     </div>
