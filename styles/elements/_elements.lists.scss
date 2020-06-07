@@ -1,6 +1,9 @@
 ul, ol {
   text-align: left;
-  padding: 0;
+  padding: 0 0 0 1rem;
+  @media (min-width: $bp-tablet) {
+    padding: 0;
+  }
 }
 
 li {
