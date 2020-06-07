@@ -6,4 +6,6 @@ image: ./images/projects/parabola/parabola-laptop.png
 webLink: https://www.parabolasoft.co.uk/
 
 ---
-Parabola software are a software agency in London. While working there I produced software for a range of clients, including colleges, charities and housing associations.
+Parabola software are a software agency based in London.
+
+While working there I produced software to solve a range of problems for a range of clients including colleges, housing associations and charities.

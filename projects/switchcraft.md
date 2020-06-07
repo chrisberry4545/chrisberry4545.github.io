@@ -1,7 +1,7 @@
 ---
 pageTitle: Switchcraft
 date: 2019-04-01
-image: ./images/projects/switchcraft/switchcraft-mobile-rotated.png
+image: ./images/projects/switchcraft/switchcraft-all.png
 imageLarge: ./images/projects/switchcraft/switchcraft-all.png
 
 webLink: https://switchcraft.co.uk

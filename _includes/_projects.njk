@@ -15,25 +15,25 @@
           {{project.templateContent}}
         </div>
         {% if project.data.githubLink %}
-          <a class="c-btn" href={{project.data.githubLink}}>
+          <a class="c-btn" href={{project.data.githubLink}} target="_blank">
             <i class="c-btn__icon">{% include icons/_github.svg %}</i>
             Github
           </a>
         {% endif %}
         {% if project.data.iosAppStoreLink %}
-          <a class="c-btn" href={{project.data.iosAppStoreLink}}>
+          <a class="c-btn" href={{project.data.iosAppStoreLink}} target="_blank">
             <i class="c-btn__icon">{% include icons/_app-store.svg %}</i>
             App Store
           </a>
         {% endif %}
         {% if project.data.playStoreLink %}
-          <a class="c-btn" href={{project.data.playStoreLink}}>
+          <a class="c-btn" href={{project.data.playStoreLink}} target="_blank">
             <i class="c-btn__icon">{% include icons/_google-play.svg %}</i>
             Google Play
           </a>
         {% endif %}
         {% if project.data.webLink %}
-          <a class="c-btn" href={{project.data.webLink}}>
+          <a class="c-btn" href={{project.data.webLink}} target="_blank">
             <i class="c-btn__icon">{% include icons/_website.svg %}</i>
             Website
           </a>

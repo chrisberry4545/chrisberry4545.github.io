@@ -1,15 +1,18 @@
-$project-image-content-margin: 2rem;
+$project-image-content-margin: 3.125rem;
 
 .c-project {
-  padding-top: 5rem;
-  border-top: 1px solid $primary-highlight-color;
-  margin-bottom: 5rem;
+  padding: 5rem 0;
+  border-top: 1px solid $divider-color;
+
+  @media (min-width: $bp-tablet) {
+    padding: 8rem 0 15.25rem;
+  }
 
   &:first-child {
     border-bottom: none;
   }
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     .c-project__inner {
       flex-direction: row-reverse;
     }
@@ -21,20 +24,20 @@ $project-image-content-margin: 2rem;
       display: flex;
       max-width: 986px;
       margin: auto;
-      align-items: flex-start;
-      justify-content: space-between;
+      align-items: center;
     }
   }
 
   .c-project__img {
-    $project-img-margin-bottom: 2.75rem;
-    margin-bottom: $project-img-margin-bottom;
+    display: block;
+    margin-bottom: 2.75rem;
     @media (min-width: $bp-tablet) {
-      margin: 0 $project-image-content-margin $project-img-margin-bottom;
+      max-width: 50%;
+      margin: 0 $project-image-content-margin;
     }
   }
 
-  .c-project-summary {
+  .c-project__summary {
     @media (min-width: $bp-tablet) {
       margin: 0 $project-image-content-margin;
     }
@@ -44,5 +47,6 @@ $project-image-content-margin: 2rem;
     margin-bottom: 3.75rem;
     @media (min-width: $bp-tablet) {
       max-width: $btn-width;
+      margin-bottom: 2.7rem;
     }
   }

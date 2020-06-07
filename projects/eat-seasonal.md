@@ -1,7 +1,7 @@
 ---
 pageTitle: Eat Seasonal
-date: 2018-11-22
-image: ./images/projects/eat-seasonal/eat-seasonal-mobile-rotated.png
+date: 2019-04-22
+image: ./images/projects/eat-seasonal/eat-seasonal-all.png
 imageLarge: ./images/projects/eat-seasonal/eat-seasonal-all.png
 
 githubLink: https://github.com/chrisberry4545/seasonal
