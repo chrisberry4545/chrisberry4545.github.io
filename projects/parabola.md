@@ -1,7 +1,7 @@
 ---
 pageTitle: Parabola Software
 date: 2013-10-01
-image: ./images/projects/parabola/parabola-laptop.png
+image: ./images//parabola/parabola-laptop.png
 
 webLink: https://www.parabolasoft.co.uk/
 

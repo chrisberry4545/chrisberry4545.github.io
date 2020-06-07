@@ -38,6 +38,8 @@ $project-image-content-margin: 3.125rem;
   }
 
   .c-project__summary {
+    max-width: 400px;
+    margin: auto;
     @media (min-width: $bp-tablet) {
       margin: 0 $project-image-content-margin;
     }

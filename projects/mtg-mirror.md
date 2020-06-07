@@ -1,7 +1,7 @@
 ---
 pageTitle: MTG Mirror
 date: 2014-11-28
-image: ./images/projects/mtg-mirror/mtg-mirror-tablet.png
+image: ./images//mtg-mirror/mtg-mirror-tablet.png
 
 githubLink: https://github.com/chrisberry4545/MTGWeb
 

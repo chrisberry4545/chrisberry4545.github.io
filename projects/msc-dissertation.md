@@ -1,7 +1,7 @@
 ---
 pageTitle: MSc. Dissertation
 date: 2013-05-01
-image: ./images/projects/msc-dissertation/msc-dissertation-laptop.png
+image: ./images//msc-dissertation/msc-dissertation-laptop.png
 downloadLink: https://github.com/chrisberry4545/finding-a-winning-strategy-in-monopoly-msc/raw/master/Dissertation.pdf
 ---
 

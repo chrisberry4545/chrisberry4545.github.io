@@ -1,7 +1,7 @@
 ---
 pageTitle: Great British Chefs
 date: 2015-01-10
-image: ./images/projects/great-british-chefs/great-british-chefs-all.png
+image: ./images//great-british-chefs/great-british-chefs-all.png
 
 webLink: https://www.greatbritishchefs.com/
 

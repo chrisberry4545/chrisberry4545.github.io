@@ -1,7 +1,7 @@
 ---
 pageTitle: Animal Adjectives
 date: 2014-10-19
-image: ./images/projects/animal-adjectives/animal-adjectives-all.png
+image: ./images//animal-adjectives/animal-adjectives-all.png
 
 githubLink: https://github.com/chrisberry4545/AnimalAdjectives
 playStoreLink: https://play.google.com/store/apps/details?id=chrisb.animaladjectives&hl=en_GB
