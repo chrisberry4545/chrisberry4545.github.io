@@ -1,6 +1,6 @@
 const ghPages = require('gh-pages');
 
-ghPages.publish('_site', (err) => {
+ghPages.publish('_site', { branch: 'master' }, (err) => {
   if (err) {
     console.log('Error deploying to github pages...');
     console.log(err);
