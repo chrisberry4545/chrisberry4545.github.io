@@ -1,4 +1,5 @@
 const Image = require('@11ty/eleventy-img');
+const Terser = require('terser');
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('styles');
@@ -8,6 +9,7 @@ module.exports = function (eleventyConfig) {
     src,
     alt,
     className,
+    dataAttribute,
     options
   ) => {
     if (alt === undefined) {
@@ -23,15 +25,26 @@ module.exports = function (eleventyConfig) {
     const lowestSrc = stats.jpeg[0];
     const sizes = '(min-width: 640px) 500px, 100vw';
 
-    return `<picture class='${className}'>
+    return `<picture class='${className}' ${dataAttribute ? `${dataAttribute}=""` : ''}>
       ${Object.values(stats).map(imageFormat => {
-        return `  <source type='image/${imageFormat[0].format}' srcset='${imageFormat.map(entry => `${entry.url} ${entry.width}w`).join(',')}' sizes=${sizes}>`;
-      }).join('\n')}
+      return `  <source type='image/${imageFormat[0].format}' srcset='${imageFormat.map(entry => `${entry.url} ${entry.width}w`).join(',')}' sizes=${sizes}>`;
+    }).join('\n')}
         <img
           alt='${alt}'
           src='${lowestSrc.url}'>
       </picture>`;
-    });
+  });
 
   eleventyConfig.addPassthroughCopy('images/processed');
+  eleventyConfig.addPassthroughCopy('scripts');
+
+  eleventyConfig.addFilter('jsmin', function (code) {
+    let minified = Terser.minify(code);
+    if (minified.error) {
+      console.log('Terser error: ', minified.error);
+      return code;
+    }
+
+    return minified.code;
+  });
 };

@@ -1,0 +1,12 @@
+@keyframes fade-in-and-up {
+  0%   {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+$fade-in-and-up-animation: fade-in-and-up 1s ease-in-out forwards;

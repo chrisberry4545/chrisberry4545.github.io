@@ -1,10 +1,12 @@
 {% for project in collections.projects reversed %}
   <div class="c-project">
-    <h2>{{ project.data.pageTitle }}</h2>
+    <h2 class="c-project__heading" data-js-animate-in-view="">
+      {{ project.data.pageTitle }}
+    </h2>
     <div class="c-project__inner">
-      {% responsivePicture project.data.image.src, project.data.image.alt, 'c-project__img' %}
+      {% responsivePicture project.data.image.src, project.data.image.alt, 'c-project__img', 'data-js-animate-in-view' %}
 
-      <div class="c-project__summary">
+      <div class="c-project__summary" data-js-animate-in-view="">
         <div class="c-project__content">
           {{project.templateContent}}
         </div>

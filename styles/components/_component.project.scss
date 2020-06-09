@@ -19,6 +19,13 @@ $project-image-content-margin: 3.125rem;
   }
 }
 
+  .c-project__heading {
+    opacity: 0;
+    &.js-animate-in-view {
+      animation: $fade-in-and-up-animation;
+    }
+  }
+
   .c-project__inner {
     @media (min-width: $bp-tablet) {
       display: flex;
@@ -31,17 +38,28 @@ $project-image-content-margin: 3.125rem;
   .c-project__img {
     display: block;
     margin-bottom: 2.75rem;
+    opacity: 0;
     @media (min-width: $bp-tablet) {
       max-width: 50%;
       margin: 0 $project-image-content-margin;
+    }
+
+    &.js-animate-in-view {
+      animation: $fade-in-and-up-animation;
     }
   }
 
   .c-project__summary {
     max-width: 400px;
     margin: auto;
+    opacity: 0;
     @media (min-width: $bp-tablet) {
       margin: 0 $project-image-content-margin;
+    }
+
+    &.js-animate-in-view {
+      animation: $fade-in-and-up-animation;
+      animation-delay: 0.2s;
     }
   }
 

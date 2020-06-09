@@ -6,19 +6,21 @@
   "scripts": {
     "dev": "npm-run-all sass --parallel watch:*",
     "start": "yarn dev",
-    "build": "yarn run sass && eleventy",
+    "build": "yarn clean-build && yarn run sass && eleventy",
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "npm run sass -- --watch",
     "sass": "sass --style=compressed styles/styles.scss _includes/css/styles.css",
     "clean-build": "rm -rf _site",
     "gh-pages": "node ./release/gh-pages.js",
-    "deploy": "yarn clean-build && yarn build && yarn gh-pages"
+    "deploy": "yarn build && yarn gh-pages",
+    "babel": "babel scripts --out-dir temp"
   },
   "dependencies": {
     "@11ty/eleventy-img": "^0.2.5",
     "eleventy": "^1.0.6",
     "gh-pages": "^3.0.0",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.26.7"
+    "sass": "^1.26.7",
+    "terser": "^4.7.0"
   }
 }
