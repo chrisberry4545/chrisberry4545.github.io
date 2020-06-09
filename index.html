@@ -1,8 +1,474 @@
----
-layout: _layout.njk
-pageTitle: Chris Berry - Full Stack Developer
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Chris Berry's Portfolio</title>
+    <style>
+      a{text-decoration:underline;color:#000;transition:color .2s ease-in-out}a:hover{transition:none;color:#7d7d7d}body{color:#000;font-family:Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px;margin:0}h1,h2,h3,h4,h5{margin:0;font-weight:400;text-align:center}h1{font-size:3rem;margin-bottom:1.5rem}h2{font-size:2rem;margin-bottom:3rem;font-weight:300}@media(min-width: 800px){h2{margin-bottom:5rem}}h3{font-size:1.5rem;margin-bottom:1.5rem;font-weight:300}img{max-width:100%}ul,ol{text-align:left;padding:0 0 0 1rem;font-weight:300}@media(min-width: 800px){ul,ol{padding:0}}li{margin-bottom:.75rem}p{margin:0 0 1rem;font-weight:300}.c-btn{width:16.25rem;max-width:100%;background:#000;color:#fff;text-decoration:none;text-align:left;min-height:3rem;display:flex;align-items:center;padding-left:18px;border-radius:12px;margin:0 auto .75rem;box-shadow:0px 4px 4px rgba(0,0,0,.25);box-sizing:border-box}.c-btn:hover{color:#fff}.c-btn__icon{width:1.5rem;height:1.5rem;margin-right:1.125rem}.c-header{position:relative;height:100vh;justify-content:center;display:flex;align-items:center;flex-direction:column;background:url("data:image/svg+xml;utf8,%3Csvg%20viewBox%3D%220%200%20237%20282%22%20fill%3D%22%23FFFFFF%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20x%3D%22205%22%20y%3D%220%22%20width%3D%2232%22%20height%3D%2255%22%20%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M192.027%200L134.137%200L192.027%2054.74V0Z%22%2F%3E%3Crect%20x%3D%22205%22%20y%3D%22227%22%20width%3D%2232%22%20height%3D%2255%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M192.027%20227L134%20281.87L134.137%20282H192.027V227Z%22%20%2F%3E%3Crect%20x%3D%2271%22%20y%3D%2286%22%20width%3D%2232%22%20height%3D%22110%22%2F%3E%3Cpath%20d%3D%22M0%20140.87L58.0273%2086L58.0273%20195.74L0%20140.87Z%22%2F%3E%3C%2Fsvg%3E") repeat center;background-size:240px}@media(min-width: 800px){.c-header::before{content:"";background:linear-gradient(270deg, #FFFFFF calc(50% - 70px), rgba(255, 255, 255, 0) 0),#000;position:absolute;top:0;left:0;bottom:0;right:0;z-index:-1}}.c-header__contents{text-align:center}@media(min-width: 800px){.c-header__contents{position:absolute;text-align:left;left:calc(50% + 130px)}}.c-header__logo{width:210px;margin:0 auto 3rem}@media(min-width: 800px){.c-header__logo{display:none}}@media(min-width: 800px){.c-header__job{text-align:left}}.c-header__link{margin:0 .75rem}@media(min-width: 800px){.c-header__link{margin:0 1.5rem 0 0}}.c-project{padding:5rem 1.25rem;border-top:1px solid #c9c9c9}@media(min-width: 800px){.c-project{padding:8rem 1.25rem 15.25rem}}.c-project:first-child{border-bottom:none}.c-project:nth-child(odd) .c-project__inner{flex-direction:row-reverse}@media(min-width: 800px){.c-project__inner{display:flex;max-width:986px;margin:auto;align-items:center}}.c-project__img{display:block;margin-bottom:2.75rem}@media(min-width: 800px){.c-project__img{max-width:50%;margin:0 3.125rem}}.c-project__summary{max-width:400px;margin:auto}@media(min-width: 800px){.c-project__summary{margin:0 3.125rem}}.c-project__content{margin-bottom:3.75rem}@media(min-width: 800px){.c-project__content{max-width:16.25rem;margin-bottom:2.7rem}}/*# sourceMappingURL=styles.css.map */
 
-{% include _header.njk %}
+    </style>
+    <meta  name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    
+<div class="c-header">
+  <div class="c-header__contents">
+    <div class="c-header__logo"><svg viewBox="0 0 250 226" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+  <rect x="137.538" y="0.615387" width="62.4615" height="224.621" />
+  <path d="M0 112.926L111.71 2.13884L111.71 223.713L0 112.926Z" />
+</svg>
+</div>
+    <h1>Chris Berry</h1>
+    <h3 class="c-header__job">Full stack developer</h3>
+    <div>
+      <a class="c-header__link" href="https://github.com/chrisberry4545">GitHub</a>
+      <a class="c-header__link" href="mailto:chrisberry4545@googlemail.com">Email</a>
+    </div>
+  </div>
+</div>
 
-{% include _projects.njk %}
+
+
+  <div class="c-project">
+    <h2>Eat Seasonal</h2>
+    <div class="c-project__inner">
+      <picture class='c-project__img'>
+        <source type='image/webp' srcset='/images/processed/d8cd7724-600.webp 600w,/images/processed/d8cd7724-800.webp 800w,/images/processed/d8cd7724-1200.webp 1200w' sizes=(min-width: 640px) 500px, 100vw>
+  <source type='image/jpeg' srcset='/images/processed/d8cd7724-600.jpeg 600w,/images/processed/d8cd7724-800.jpeg 800w,/images/processed/d8cd7724-1200.jpeg 1200w' sizes=(min-width: 640px) 500px, 100vw>
+        <img
+          alt='Eat Seasonal'
+          src='/images/processed/d8cd7724-600.jpeg'>
+      </picture>
+
+      <div class="c-project__summary">
+        <div class="c-project__content">
+          <p>View which fruit and vegetables are currently in season. Includes recipes ideas and nutritional information.</p>
+<p>Available on the iOS, Android or on the web.</p>
+
+        </div>
+        
+          <a class="c-btn" href=https://github.com/chrisberry4545/seasonal target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9209 11.7674C24.9209 17.1158 21.6403 21.6926 16.8016 23.2937C16.1871 23.4046 15.9645 23.0236 15.9645 22.7102C15.9645 22.5795 15.9661 22.2726 15.9682 21.8615C15.9725 21.0282 15.979 19.7668 15.979 18.6784C15.979 17.545 15.6016 16.8216 15.1564 16.4406C17.8613 16.1368 20.7113 15.7655 20.7113 11.1115C20.7113 9.79011 20.2371 9.12458 19.4629 8.27096C19.5887 7.95748 20 6.66981 19.3371 4.99633C18.3258 4.67803 15.9984 6.29847 15.9984 6.29847C15.0306 6.02839 13.9903 5.88854 12.9597 5.88854C11.929 5.88854 10.8887 6.02839 9.92094 6.29847C9.92094 6.29847 7.59352 4.68286 6.58223 4.99633C5.91933 6.66499 6.33062 7.95748 6.45643 8.27096C5.68223 9.11975 5.31449 9.78529 5.31449 11.1115C5.31449 15.751 8.04352 16.1416 10.7484 16.4406C10.4 16.7589 10.0855 17.2943 9.97417 18.0659C9.28223 18.3842 7.50643 18.9195 6.44675 17.0579C5.78385 15.9101 4.57901 15.8137 4.57901 15.8137C3.39352 15.7992 4.50159 16.5564 4.50159 16.5564C5.29514 16.9181 5.84675 18.3215 5.84675 18.3215C6.55804 20.4821 9.94514 19.7587 9.94514 19.7587C9.94514 20.4149 9.95123 21.3383 9.95552 21.9886C9.95785 22.3419 9.95965 22.6145 9.95965 22.7198C9.95965 23.0333 9.74191 23.4143 9.12256 23.3034C4.29836 21.6926 0.920944 17.1158 0.920944 11.7674C0.920944 5.07832 6.05482 0 12.7661 0C19.4774 0 24.9209 5.07832 24.9209 11.7674ZM8.69675 18.9533C8.83707 18.9533 8.94836 18.8761 8.94836 18.7797C8.94836 18.6687 8.82256 18.5916 8.6774 18.606C8.53707 18.606 8.42578 18.6832 8.42578 18.7797C8.42578 18.8906 8.53707 18.9677 8.69675 18.9533ZM7.65159 18.7989C7.50643 18.77 7.40965 18.6591 7.44352 18.5626C7.4774 18.4662 7.61772 18.4179 7.74352 18.4517C7.88869 18.4951 7.98062 18.606 7.95159 18.7025C7.92256 18.7989 7.7774 18.8472 7.65159 18.7989ZM9.35965 18.717C9.34514 18.606 9.44191 18.5144 9.58223 18.4806C9.72256 18.4662 9.8532 18.5289 9.86772 18.6205C9.88223 18.717 9.78546 18.8086 9.64514 18.8423C9.49998 18.8761 9.37417 18.8134 9.35965 18.717ZM5.65804 16.8843C5.57578 16.7927 5.56127 16.6818 5.62417 16.6335C5.68707 16.5708 5.79836 16.6046 5.87578 16.6818C5.95804 16.7734 5.97256 16.8843 5.90965 16.9326C5.84675 16.9952 5.73546 16.9615 5.65804 16.8843ZM5.21288 16.431C5.11611 16.3828 5.06772 16.3056 5.10159 16.2429C5.13546 16.1947 5.21288 16.1802 5.30965 16.2091C5.40643 16.2574 5.45481 16.3345 5.42094 16.3972C5.38707 16.4647 5.2903 16.4792 5.21288 16.431ZM6.73223 18.2588C6.62094 18.1672 6.59191 18.0225 6.66933 17.9598C6.73223 17.8826 6.8774 17.8971 6.98385 18.008C7.08062 18.0996 7.10965 18.2443 7.04675 18.307C6.98385 18.3842 6.84352 18.3697 6.73223 18.2588ZM6.11772 17.5354C6.0403 17.4245 6.0403 17.2991 6.11772 17.2509C6.19514 17.1882 6.32094 17.2364 6.38869 17.3473C6.46611 17.4582 6.46611 17.5836 6.38869 17.6463C6.32578 17.6945 6.19514 17.6463 6.11772 17.5354Z" fill="currentColor" />
+</svg>
+</i>
+            Github
+          </a>
+        
+        
+          <a class="c-btn" href=https://apps.apple.com/us/app/eat-seasonal/id1496551124?ls=1 target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4355 4.70323L11.9952 5.4629L11.5645 4.70323C11.2887 4.22903 10.6887 4.06935 10.2145 4.34032C9.74032 4.61613 9.58065 5.21613 9.85161 5.69032L10.8581 7.4371L7.63548 13.021H5.11935C4.57258 13.021 4.13226 13.4613 4.13226 14.0081C4.13226 14.5548 4.57258 14.9952 5.11935 14.9952H14.0952C14.5258 14.1871 13.9694 13.021 12.9774 13.021H9.91452L14.1484 5.69032C14.4194 5.21613 14.2597 4.61129 13.7855 4.34032C13.3113 4.06935 12.7065 4.22903 12.4355 4.70323ZM7.23871 17.6565L8.1871 16.0113C7.67419 15.3919 7.02581 15.2032 6.23226 15.45L5.52581 16.6694C5.25484 17.1435 5.41452 17.7484 5.88871 18.0194C6.3629 18.2903 6.96774 18.1306 7.23871 17.6565ZM18.929 13.0258H16.3597L16.0994 12.5744C14.937 10.5587 14.0557 9.0304 13.4516 7.99355C12.8661 8.47742 12.2758 9.90968 13.1032 11.3371C13.4838 11.998 13.9557 12.8146 14.5178 13.7874C15.1491 14.8799 15.8941 16.1693 16.7516 17.6565C17.0274 18.1306 17.6274 18.2903 18.1016 18.0194C18.5758 17.7435 18.7355 17.1435 18.4645 16.6694L17.5016 15H18.929C19.4758 15 19.9161 14.5597 19.9161 14.0129C19.9161 13.4661 19.4758 13.0258 18.929 13.0258ZM0 12C0 5.37097 5.37097 0 12 0C18.629 0 24 5.37097 24 12C24 18.629 18.629 24 12 24C5.37097 24 0 18.629 0 12ZM12 22.4516C17.8016 22.4516 22.4516 17.7435 22.4516 12C22.4516 6.19839 17.7435 1.54839 12 1.54839C6.19839 1.54839 1.54839 6.25645 1.54839 12C1.54839 17.8016 6.25645 22.4516 12 22.4516Z" fill="currentColor"/>
+</svg>
+</i>
+            App Store
+          </a>
+        
+        
+          <a class="c-btn" href=https://play.google.com/store/apps/details?id=com.chrisbdev.seasonal target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.72881 5.67103L14.4681 11.4259L16.0309 9.863L8.72881 5.67103ZM7.23085 5.33301C6.89283 5.50985 6.66663 5.83229 6.66663 6.25093V17.7268C6.66663 18.1455 6.89287 18.468 7.23093 18.6448L13.9038 11.9876L7.23097 5.33301H7.23085ZM16.7565 10.3129L18.2882 11.1996C18.7875 11.5715 18.7875 12.4089 18.3194 12.7807L16.7565 13.6675L15.048 11.9902L16.7565 10.3129ZM16.0309 14.1174L8.72881 18.3093L14.4681 12.5545L16.0309 14.1174Z" fill="currentColor"/>
+  <circle cx="12" cy="12" r="11.25" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</i>
+            Google Play
+          </a>
+        
+        
+          <a class="c-btn" href=https://eat-seasonal.co.uk target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12ZM7.8465 21.645C9.12 22.1955 10.524 22.5 12 22.5L12.0015 22.4985C14.9415 22.4985 17.598 21.2895 19.5045 19.3425C19.5075 19.302 19.5135 19.26 19.524 19.2195C20.628 14.868 20.0445 11.706 19.7205 10.4925C19.6455 10.497 19.5705 10.4985 19.497 10.4985C18.3165 10.4985 17.172 10.0335 16.3185 9.18C15.468 8.331 15 7.2 15 5.9985C15 4.797 15.468 3.6675 16.3185 2.817C16.4085 2.727 16.503 2.6415 16.6005 2.559C15.2115 1.881 13.65 1.5 12 1.5C10.9575 1.5 9.951 1.6515 9 1.935V3.75C9 3.9495 8.922 4.14 8.781 4.281L5.781 7.281C5.64 7.4205 5.4495 7.5 5.25 7.5H2.511C1.863 8.8635 1.5 10.389 1.5 12C1.5 15.5685 3.2805 18.72 6 20.6175V16.2135L3.414 14.9205C3.1605 14.7945 3 14.5335 3 14.25V9.75C3 9.336 3.336 9 3.75 9H6.75C6.9495 9 7.14 9.078 7.281 9.219C7.308 9.2475 10.1025 12 12.75 12C13.164 12 13.5 12.336 13.5 12.75V15C13.5 15.183 13.4325 15.36 13.311 15.498L7.8465 21.645Z" fill="currentColor"/>
+</svg>
+</i>
+            Website
+          </a>
+        
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-project">
+    <h2>Switchcraft</h2>
+    <div class="c-project__inner">
+      <picture class='c-project__img'>
+        <source type='image/webp' srcset='/images/processed/95bb58b-600.webp 600w,/images/processed/95bb58b-800.webp 800w,/images/processed/95bb58b-1200.webp 1200w' sizes=(min-width: 640px) 500px, 100vw>
+  <source type='image/jpeg' srcset='/images/processed/95bb58b-600.jpeg 600w,/images/processed/95bb58b-800.jpeg 800w,/images/processed/95bb58b-1200.jpeg 1200w' sizes=(min-width: 640px) 500px, 100vw>
+        <img
+          alt='Switchcraft'
+          src='/images/processed/95bb58b-600.jpeg'>
+      </picture>
+
+      <div class="c-project__summary">
+        <div class="c-project__content">
+          <p>Switchcraft is a Fintech company focusing on saving customers money by automatically switching their utilities to the cheapest energy tariff whenever a better deal is available.</p>
+<p>Using technologies such as TypeScript, NodeJs, Angular and GraphQL I built services for users to sign up to the service, handling the switching of their utilities and monitoring the status of the process.</p>
+
+        </div>
+        
+        
+        
+        
+          <a class="c-btn" href=https://switchcraft.co.uk target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12ZM7.8465 21.645C9.12 22.1955 10.524 22.5 12 22.5L12.0015 22.4985C14.9415 22.4985 17.598 21.2895 19.5045 19.3425C19.5075 19.302 19.5135 19.26 19.524 19.2195C20.628 14.868 20.0445 11.706 19.7205 10.4925C19.6455 10.497 19.5705 10.4985 19.497 10.4985C18.3165 10.4985 17.172 10.0335 16.3185 9.18C15.468 8.331 15 7.2 15 5.9985C15 4.797 15.468 3.6675 16.3185 2.817C16.4085 2.727 16.503 2.6415 16.6005 2.559C15.2115 1.881 13.65 1.5 12 1.5C10.9575 1.5 9.951 1.6515 9 1.935V3.75C9 3.9495 8.922 4.14 8.781 4.281L5.781 7.281C5.64 7.4205 5.4495 7.5 5.25 7.5H2.511C1.863 8.8635 1.5 10.389 1.5 12C1.5 15.5685 3.2805 18.72 6 20.6175V16.2135L3.414 14.9205C3.1605 14.7945 3 14.5335 3 14.25V9.75C3 9.336 3.336 9 3.75 9H6.75C6.9495 9 7.14 9.078 7.281 9.219C7.308 9.2475 10.1025 12 12.75 12C13.164 12 13.5 12.336 13.5 12.75V15C13.5 15.183 13.4325 15.36 13.311 15.498L7.8465 21.645Z" fill="currentColor"/>
+</svg>
+</i>
+            Website
+          </a>
+        
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-project">
+    <h2>Kite</h2>
+    <div class="c-project__inner">
+      <picture class='c-project__img'>
+        <source type='image/webp' srcset='/images/processed/40ab4a8b-600.webp 600w,/images/processed/40ab4a8b-800.webp 800w,/images/processed/40ab4a8b-1200.webp 1200w' sizes=(min-width: 640px) 500px, 100vw>
+  <source type='image/jpeg' srcset='/images/processed/40ab4a8b-600.jpeg 600w,/images/processed/40ab4a8b-800.jpeg 800w,/images/processed/40ab4a8b-1200.jpeg 1200w' sizes=(min-width: 640px) 500px, 100vw>
+        <img
+          alt='Kite'
+          src='/images/processed/40ab4a8b-600.jpeg'>
+      </picture>
+
+      <div class="c-project__summary">
+        <div class="c-project__content">
+          <p>Building apps which let users customize products with their own imagery and buy them, or sell them to others.
+Some of the projects I worked on include:</p>
+<ul>
+<li>A white label <a href="https://catalog.kite.ly/">web application</a> for ordering items such as clothing or wall art</li>
+<li>A white label app for creating <a href="https://photobook.kite.ly/">photo books</a> online.</li>
+<li><a href="https://apps.shopify.com/kite-shopify-plugin?surface_detail=kite&amp;surface_inter_position=1&amp;surface_intra_position=1&amp;surface_type=search">Shopify App</a> so brands can easily create and sell merchandise</li>
+</ul>
+
+        </div>
+        
+        
+        
+        
+          <a class="c-btn" href=https://kite.ly target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12ZM7.8465 21.645C9.12 22.1955 10.524 22.5 12 22.5L12.0015 22.4985C14.9415 22.4985 17.598 21.2895 19.5045 19.3425C19.5075 19.302 19.5135 19.26 19.524 19.2195C20.628 14.868 20.0445 11.706 19.7205 10.4925C19.6455 10.497 19.5705 10.4985 19.497 10.4985C18.3165 10.4985 17.172 10.0335 16.3185 9.18C15.468 8.331 15 7.2 15 5.9985C15 4.797 15.468 3.6675 16.3185 2.817C16.4085 2.727 16.503 2.6415 16.6005 2.559C15.2115 1.881 13.65 1.5 12 1.5C10.9575 1.5 9.951 1.6515 9 1.935V3.75C9 3.9495 8.922 4.14 8.781 4.281L5.781 7.281C5.64 7.4205 5.4495 7.5 5.25 7.5H2.511C1.863 8.8635 1.5 10.389 1.5 12C1.5 15.5685 3.2805 18.72 6 20.6175V16.2135L3.414 14.9205C3.1605 14.7945 3 14.5335 3 14.25V9.75C3 9.336 3.336 9 3.75 9H6.75C6.9495 9 7.14 9.078 7.281 9.219C7.308 9.2475 10.1025 12 12.75 12C13.164 12 13.5 12.336 13.5 12.75V15C13.5 15.183 13.4325 15.36 13.311 15.498L7.8465 21.645Z" fill="currentColor"/>
+</svg>
+</i>
+            Website
+          </a>
+        
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-project">
+    <h2>London Bike Tracker</h2>
+    <div class="c-project__inner">
+      <picture class='c-project__img'>
+        <source type='image/webp' srcset='/images/processed/48818fd6-600.webp 600w,/images/processed/48818fd6-800.webp 800w,/images/processed/48818fd6-1200.webp 1200w' sizes=(min-width: 640px) 500px, 100vw>
+  <source type='image/jpeg' srcset='/images/processed/48818fd6-600.jpeg 600w,/images/processed/48818fd6-800.jpeg 800w,/images/processed/48818fd6-1200.jpeg 1200w' sizes=(min-width: 640px) 500px, 100vw>
+        <img
+          alt='London Bike Tracker'
+          src='/images/processed/48818fd6-600.jpeg'>
+      </picture>
+
+      <div class="c-project__summary">
+        <div class="c-project__content">
+          <p>An app for Pebble Smartwatches which uses TFL data to find the bike point nearest to the user. The app then uses the compass in the watch to direct the user towards the bike point.</p>
+
+        </div>
+        
+          <a class="c-btn" href=https://github.com/chrisberry4545/BikeTracker target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9209 11.7674C24.9209 17.1158 21.6403 21.6926 16.8016 23.2937C16.1871 23.4046 15.9645 23.0236 15.9645 22.7102C15.9645 22.5795 15.9661 22.2726 15.9682 21.8615C15.9725 21.0282 15.979 19.7668 15.979 18.6784C15.979 17.545 15.6016 16.8216 15.1564 16.4406C17.8613 16.1368 20.7113 15.7655 20.7113 11.1115C20.7113 9.79011 20.2371 9.12458 19.4629 8.27096C19.5887 7.95748 20 6.66981 19.3371 4.99633C18.3258 4.67803 15.9984 6.29847 15.9984 6.29847C15.0306 6.02839 13.9903 5.88854 12.9597 5.88854C11.929 5.88854 10.8887 6.02839 9.92094 6.29847C9.92094 6.29847 7.59352 4.68286 6.58223 4.99633C5.91933 6.66499 6.33062 7.95748 6.45643 8.27096C5.68223 9.11975 5.31449 9.78529 5.31449 11.1115C5.31449 15.751 8.04352 16.1416 10.7484 16.4406C10.4 16.7589 10.0855 17.2943 9.97417 18.0659C9.28223 18.3842 7.50643 18.9195 6.44675 17.0579C5.78385 15.9101 4.57901 15.8137 4.57901 15.8137C3.39352 15.7992 4.50159 16.5564 4.50159 16.5564C5.29514 16.9181 5.84675 18.3215 5.84675 18.3215C6.55804 20.4821 9.94514 19.7587 9.94514 19.7587C9.94514 20.4149 9.95123 21.3383 9.95552 21.9886C9.95785 22.3419 9.95965 22.6145 9.95965 22.7198C9.95965 23.0333 9.74191 23.4143 9.12256 23.3034C4.29836 21.6926 0.920944 17.1158 0.920944 11.7674C0.920944 5.07832 6.05482 0 12.7661 0C19.4774 0 24.9209 5.07832 24.9209 11.7674ZM8.69675 18.9533C8.83707 18.9533 8.94836 18.8761 8.94836 18.7797C8.94836 18.6687 8.82256 18.5916 8.6774 18.606C8.53707 18.606 8.42578 18.6832 8.42578 18.7797C8.42578 18.8906 8.53707 18.9677 8.69675 18.9533ZM7.65159 18.7989C7.50643 18.77 7.40965 18.6591 7.44352 18.5626C7.4774 18.4662 7.61772 18.4179 7.74352 18.4517C7.88869 18.4951 7.98062 18.606 7.95159 18.7025C7.92256 18.7989 7.7774 18.8472 7.65159 18.7989ZM9.35965 18.717C9.34514 18.606 9.44191 18.5144 9.58223 18.4806C9.72256 18.4662 9.8532 18.5289 9.86772 18.6205C9.88223 18.717 9.78546 18.8086 9.64514 18.8423C9.49998 18.8761 9.37417 18.8134 9.35965 18.717ZM5.65804 16.8843C5.57578 16.7927 5.56127 16.6818 5.62417 16.6335C5.68707 16.5708 5.79836 16.6046 5.87578 16.6818C5.95804 16.7734 5.97256 16.8843 5.90965 16.9326C5.84675 16.9952 5.73546 16.9615 5.65804 16.8843ZM5.21288 16.431C5.11611 16.3828 5.06772 16.3056 5.10159 16.2429C5.13546 16.1947 5.21288 16.1802 5.30965 16.2091C5.40643 16.2574 5.45481 16.3345 5.42094 16.3972C5.38707 16.4647 5.2903 16.4792 5.21288 16.431ZM6.73223 18.2588C6.62094 18.1672 6.59191 18.0225 6.66933 17.9598C6.73223 17.8826 6.8774 17.8971 6.98385 18.008C7.08062 18.0996 7.10965 18.2443 7.04675 18.307C6.98385 18.3842 6.84352 18.3697 6.73223 18.2588ZM6.11772 17.5354C6.0403 17.4245 6.0403 17.2991 6.11772 17.2509C6.19514 17.1882 6.32094 17.2364 6.38869 17.3473C6.46611 17.4582 6.46611 17.5836 6.38869 17.6463C6.32578 17.6945 6.19514 17.6463 6.11772 17.5354Z" fill="currentColor" />
+</svg>
+</i>
+            Github
+          </a>
+        
+        
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-project">
+    <h2>House Money Management</h2>
+    <div class="c-project__inner">
+      <picture class='c-project__img'>
+        <source type='image/webp' srcset='/images/processed/74caf4bc-600.webp 600w,/images/processed/74caf4bc-800.webp 800w,/images/processed/74caf4bc-1200.webp 1200w' sizes=(min-width: 640px) 500px, 100vw>
+  <source type='image/jpeg' srcset='/images/processed/74caf4bc-600.jpeg 600w,/images/processed/74caf4bc-800.jpeg 800w,/images/processed/74caf4bc-1200.jpeg 1200w' sizes=(min-width: 640px) 500px, 100vw>
+        <img
+          alt='House Money Management'
+          src='/images/processed/74caf4bc-600.jpeg'>
+      </picture>
+
+      <div class="c-project__summary">
+        <div class="c-project__content">
+          <p>Application I created to manage money with my housemates. It has solved the problem we had of tracking who owes who and included useful information like payment histories.</p>
+
+        </div>
+        
+          <a class="c-btn" href=https://github.com/chrisberry4545/HouseOwage target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9209 11.7674C24.9209 17.1158 21.6403 21.6926 16.8016 23.2937C16.1871 23.4046 15.9645 23.0236 15.9645 22.7102C15.9645 22.5795 15.9661 22.2726 15.9682 21.8615C15.9725 21.0282 15.979 19.7668 15.979 18.6784C15.979 17.545 15.6016 16.8216 15.1564 16.4406C17.8613 16.1368 20.7113 15.7655 20.7113 11.1115C20.7113 9.79011 20.2371 9.12458 19.4629 8.27096C19.5887 7.95748 20 6.66981 19.3371 4.99633C18.3258 4.67803 15.9984 6.29847 15.9984 6.29847C15.0306 6.02839 13.9903 5.88854 12.9597 5.88854C11.929 5.88854 10.8887 6.02839 9.92094 6.29847C9.92094 6.29847 7.59352 4.68286 6.58223 4.99633C5.91933 6.66499 6.33062 7.95748 6.45643 8.27096C5.68223 9.11975 5.31449 9.78529 5.31449 11.1115C5.31449 15.751 8.04352 16.1416 10.7484 16.4406C10.4 16.7589 10.0855 17.2943 9.97417 18.0659C9.28223 18.3842 7.50643 18.9195 6.44675 17.0579C5.78385 15.9101 4.57901 15.8137 4.57901 15.8137C3.39352 15.7992 4.50159 16.5564 4.50159 16.5564C5.29514 16.9181 5.84675 18.3215 5.84675 18.3215C6.55804 20.4821 9.94514 19.7587 9.94514 19.7587C9.94514 20.4149 9.95123 21.3383 9.95552 21.9886C9.95785 22.3419 9.95965 22.6145 9.95965 22.7198C9.95965 23.0333 9.74191 23.4143 9.12256 23.3034C4.29836 21.6926 0.920944 17.1158 0.920944 11.7674C0.920944 5.07832 6.05482 0 12.7661 0C19.4774 0 24.9209 5.07832 24.9209 11.7674ZM8.69675 18.9533C8.83707 18.9533 8.94836 18.8761 8.94836 18.7797C8.94836 18.6687 8.82256 18.5916 8.6774 18.606C8.53707 18.606 8.42578 18.6832 8.42578 18.7797C8.42578 18.8906 8.53707 18.9677 8.69675 18.9533ZM7.65159 18.7989C7.50643 18.77 7.40965 18.6591 7.44352 18.5626C7.4774 18.4662 7.61772 18.4179 7.74352 18.4517C7.88869 18.4951 7.98062 18.606 7.95159 18.7025C7.92256 18.7989 7.7774 18.8472 7.65159 18.7989ZM9.35965 18.717C9.34514 18.606 9.44191 18.5144 9.58223 18.4806C9.72256 18.4662 9.8532 18.5289 9.86772 18.6205C9.88223 18.717 9.78546 18.8086 9.64514 18.8423C9.49998 18.8761 9.37417 18.8134 9.35965 18.717ZM5.65804 16.8843C5.57578 16.7927 5.56127 16.6818 5.62417 16.6335C5.68707 16.5708 5.79836 16.6046 5.87578 16.6818C5.95804 16.7734 5.97256 16.8843 5.90965 16.9326C5.84675 16.9952 5.73546 16.9615 5.65804 16.8843ZM5.21288 16.431C5.11611 16.3828 5.06772 16.3056 5.10159 16.2429C5.13546 16.1947 5.21288 16.1802 5.30965 16.2091C5.40643 16.2574 5.45481 16.3345 5.42094 16.3972C5.38707 16.4647 5.2903 16.4792 5.21288 16.431ZM6.73223 18.2588C6.62094 18.1672 6.59191 18.0225 6.66933 17.9598C6.73223 17.8826 6.8774 17.8971 6.98385 18.008C7.08062 18.0996 7.10965 18.2443 7.04675 18.307C6.98385 18.3842 6.84352 18.3697 6.73223 18.2588ZM6.11772 17.5354C6.0403 17.4245 6.0403 17.2991 6.11772 17.2509C6.19514 17.1882 6.32094 17.2364 6.38869 17.3473C6.46611 17.4582 6.46611 17.5836 6.38869 17.6463C6.32578 17.6945 6.19514 17.6463 6.11772 17.5354Z" fill="currentColor" />
+</svg>
+</i>
+            Github
+          </a>
+        
+        
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-project">
+    <h2>Great British Chefs</h2>
+    <div class="c-project__inner">
+      <picture class='c-project__img'>
+        <source type='image/webp' srcset='/images/processed/4bebb0cb-600.webp 600w,/images/processed/4bebb0cb-800.webp 800w,/images/processed/4bebb0cb-1200.webp 1200w' sizes=(min-width: 640px) 500px, 100vw>
+  <source type='image/jpeg' srcset='/images/processed/4bebb0cb-600.jpeg 600w,/images/processed/4bebb0cb-800.jpeg 800w,/images/processed/4bebb0cb-1200.jpeg 1200w' sizes=(min-width: 640px) 500px, 100vw>
+        <img
+          alt='Great British Chefs'
+          src='/images/processed/4bebb0cb-600.jpeg'>
+      </picture>
+
+      <div class="c-project__summary">
+        <div class="c-project__content">
+          <p>Working as part of a small team we delivered a whole new site design and custom built CMS solution which will allow Great British Chefs to release stunning content on a fast and responsive site.</p>
+
+        </div>
+        
+        
+        
+        
+          <a class="c-btn" href=https://www.greatbritishchefs.com/ target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12ZM7.8465 21.645C9.12 22.1955 10.524 22.5 12 22.5L12.0015 22.4985C14.9415 22.4985 17.598 21.2895 19.5045 19.3425C19.5075 19.302 19.5135 19.26 19.524 19.2195C20.628 14.868 20.0445 11.706 19.7205 10.4925C19.6455 10.497 19.5705 10.4985 19.497 10.4985C18.3165 10.4985 17.172 10.0335 16.3185 9.18C15.468 8.331 15 7.2 15 5.9985C15 4.797 15.468 3.6675 16.3185 2.817C16.4085 2.727 16.503 2.6415 16.6005 2.559C15.2115 1.881 13.65 1.5 12 1.5C10.9575 1.5 9.951 1.6515 9 1.935V3.75C9 3.9495 8.922 4.14 8.781 4.281L5.781 7.281C5.64 7.4205 5.4495 7.5 5.25 7.5H2.511C1.863 8.8635 1.5 10.389 1.5 12C1.5 15.5685 3.2805 18.72 6 20.6175V16.2135L3.414 14.9205C3.1605 14.7945 3 14.5335 3 14.25V9.75C3 9.336 3.336 9 3.75 9H6.75C6.9495 9 7.14 9.078 7.281 9.219C7.308 9.2475 10.1025 12 12.75 12C13.164 12 13.5 12.336 13.5 12.75V15C13.5 15.183 13.4325 15.36 13.311 15.498L7.8465 21.645Z" fill="currentColor"/>
+</svg>
+</i>
+            Website
+          </a>
+        
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-project">
+    <h2>Librarians App</h2>
+    <div class="c-project__inner">
+      <picture class='c-project__img'>
+        <source type='image/webp' srcset='/images/processed/faddfb0b-600.webp 600w,/images/processed/faddfb0b-800.webp 800w,/images/processed/faddfb0b.webp 1154w' sizes=(min-width: 640px) 500px, 100vw>
+  <source type='image/jpeg' srcset='/images/processed/faddfb0b-600.jpeg 600w,/images/processed/faddfb0b-800.jpeg 800w,/images/processed/faddfb0b.jpeg 1154w' sizes=(min-width: 640px) 500px, 100vw>
+        <img
+          alt='Librarians App'
+          src='/images/processed/faddfb0b-600.jpeg'>
+      </picture>
+
+      <div class="c-project__summary">
+        <div class="c-project__content">
+          <p>The band, The Librarians, wanted to release their most recent EP as a mobile app. The app lets fans play the EP and read about the band.</p>
+
+        </div>
+        
+          <a class="c-btn" href=https://github.com/chrisberry4545/LibrariansEP target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9209 11.7674C24.9209 17.1158 21.6403 21.6926 16.8016 23.2937C16.1871 23.4046 15.9645 23.0236 15.9645 22.7102C15.9645 22.5795 15.9661 22.2726 15.9682 21.8615C15.9725 21.0282 15.979 19.7668 15.979 18.6784C15.979 17.545 15.6016 16.8216 15.1564 16.4406C17.8613 16.1368 20.7113 15.7655 20.7113 11.1115C20.7113 9.79011 20.2371 9.12458 19.4629 8.27096C19.5887 7.95748 20 6.66981 19.3371 4.99633C18.3258 4.67803 15.9984 6.29847 15.9984 6.29847C15.0306 6.02839 13.9903 5.88854 12.9597 5.88854C11.929 5.88854 10.8887 6.02839 9.92094 6.29847C9.92094 6.29847 7.59352 4.68286 6.58223 4.99633C5.91933 6.66499 6.33062 7.95748 6.45643 8.27096C5.68223 9.11975 5.31449 9.78529 5.31449 11.1115C5.31449 15.751 8.04352 16.1416 10.7484 16.4406C10.4 16.7589 10.0855 17.2943 9.97417 18.0659C9.28223 18.3842 7.50643 18.9195 6.44675 17.0579C5.78385 15.9101 4.57901 15.8137 4.57901 15.8137C3.39352 15.7992 4.50159 16.5564 4.50159 16.5564C5.29514 16.9181 5.84675 18.3215 5.84675 18.3215C6.55804 20.4821 9.94514 19.7587 9.94514 19.7587C9.94514 20.4149 9.95123 21.3383 9.95552 21.9886C9.95785 22.3419 9.95965 22.6145 9.95965 22.7198C9.95965 23.0333 9.74191 23.4143 9.12256 23.3034C4.29836 21.6926 0.920944 17.1158 0.920944 11.7674C0.920944 5.07832 6.05482 0 12.7661 0C19.4774 0 24.9209 5.07832 24.9209 11.7674ZM8.69675 18.9533C8.83707 18.9533 8.94836 18.8761 8.94836 18.7797C8.94836 18.6687 8.82256 18.5916 8.6774 18.606C8.53707 18.606 8.42578 18.6832 8.42578 18.7797C8.42578 18.8906 8.53707 18.9677 8.69675 18.9533ZM7.65159 18.7989C7.50643 18.77 7.40965 18.6591 7.44352 18.5626C7.4774 18.4662 7.61772 18.4179 7.74352 18.4517C7.88869 18.4951 7.98062 18.606 7.95159 18.7025C7.92256 18.7989 7.7774 18.8472 7.65159 18.7989ZM9.35965 18.717C9.34514 18.606 9.44191 18.5144 9.58223 18.4806C9.72256 18.4662 9.8532 18.5289 9.86772 18.6205C9.88223 18.717 9.78546 18.8086 9.64514 18.8423C9.49998 18.8761 9.37417 18.8134 9.35965 18.717ZM5.65804 16.8843C5.57578 16.7927 5.56127 16.6818 5.62417 16.6335C5.68707 16.5708 5.79836 16.6046 5.87578 16.6818C5.95804 16.7734 5.97256 16.8843 5.90965 16.9326C5.84675 16.9952 5.73546 16.9615 5.65804 16.8843ZM5.21288 16.431C5.11611 16.3828 5.06772 16.3056 5.10159 16.2429C5.13546 16.1947 5.21288 16.1802 5.30965 16.2091C5.40643 16.2574 5.45481 16.3345 5.42094 16.3972C5.38707 16.4647 5.2903 16.4792 5.21288 16.431ZM6.73223 18.2588C6.62094 18.1672 6.59191 18.0225 6.66933 17.9598C6.73223 17.8826 6.8774 17.8971 6.98385 18.008C7.08062 18.0996 7.10965 18.2443 7.04675 18.307C6.98385 18.3842 6.84352 18.3697 6.73223 18.2588ZM6.11772 17.5354C6.0403 17.4245 6.0403 17.2991 6.11772 17.2509C6.19514 17.1882 6.32094 17.2364 6.38869 17.3473C6.46611 17.4582 6.46611 17.5836 6.38869 17.6463C6.32578 17.6945 6.19514 17.6463 6.11772 17.5354Z" fill="currentColor" />
+</svg>
+</i>
+            Github
+          </a>
+        
+        
+        
+          <a class="c-btn" href=https://play.google.com/store/apps/details?id=chris.librariansep target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.72881 5.67103L14.4681 11.4259L16.0309 9.863L8.72881 5.67103ZM7.23085 5.33301C6.89283 5.50985 6.66663 5.83229 6.66663 6.25093V17.7268C6.66663 18.1455 6.89287 18.468 7.23093 18.6448L13.9038 11.9876L7.23097 5.33301H7.23085ZM16.7565 10.3129L18.2882 11.1996C18.7875 11.5715 18.7875 12.4089 18.3194 12.7807L16.7565 13.6675L15.048 11.9902L16.7565 10.3129ZM16.0309 14.1174L8.72881 18.3093L14.4681 12.5545L16.0309 14.1174Z" fill="currentColor"/>
+  <circle cx="12" cy="12" r="11.25" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</i>
+            Google Play
+          </a>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-project">
+    <h2>MTG Mirror</h2>
+    <div class="c-project__inner">
+      <picture class='c-project__img'>
+        <source type='image/webp' srcset='/images/processed/206a37c0-600.webp 600w,/images/processed/206a37c0-800.webp 800w,/images/processed/206a37c0.webp 1174w' sizes=(min-width: 640px) 500px, 100vw>
+  <source type='image/jpeg' srcset='/images/processed/206a37c0-600.jpeg 600w,/images/processed/206a37c0-800.jpeg 800w,/images/processed/206a37c0.jpeg 1174w' sizes=(min-width: 640px) 500px, 100vw>
+        <img
+          alt='MTG Mirror'
+          src='/images/processed/206a37c0-600.jpeg'>
+      </picture>
+
+      <div class="c-project__summary">
+        <div class="c-project__content">
+          <p>MTG Mirror is a web app for fans of the popular card game Magic: the Gathering. It simulates certain aspects of the game for players to practice.</p>
+<p>I have since sold the site, but it proved to be a popular site when I was running it, with over 70,000 sessions a month.</p>
+
+        </div>
+        
+          <a class="c-btn" href=https://github.com/chrisberry4545/MTGWeb target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9209 11.7674C24.9209 17.1158 21.6403 21.6926 16.8016 23.2937C16.1871 23.4046 15.9645 23.0236 15.9645 22.7102C15.9645 22.5795 15.9661 22.2726 15.9682 21.8615C15.9725 21.0282 15.979 19.7668 15.979 18.6784C15.979 17.545 15.6016 16.8216 15.1564 16.4406C17.8613 16.1368 20.7113 15.7655 20.7113 11.1115C20.7113 9.79011 20.2371 9.12458 19.4629 8.27096C19.5887 7.95748 20 6.66981 19.3371 4.99633C18.3258 4.67803 15.9984 6.29847 15.9984 6.29847C15.0306 6.02839 13.9903 5.88854 12.9597 5.88854C11.929 5.88854 10.8887 6.02839 9.92094 6.29847C9.92094 6.29847 7.59352 4.68286 6.58223 4.99633C5.91933 6.66499 6.33062 7.95748 6.45643 8.27096C5.68223 9.11975 5.31449 9.78529 5.31449 11.1115C5.31449 15.751 8.04352 16.1416 10.7484 16.4406C10.4 16.7589 10.0855 17.2943 9.97417 18.0659C9.28223 18.3842 7.50643 18.9195 6.44675 17.0579C5.78385 15.9101 4.57901 15.8137 4.57901 15.8137C3.39352 15.7992 4.50159 16.5564 4.50159 16.5564C5.29514 16.9181 5.84675 18.3215 5.84675 18.3215C6.55804 20.4821 9.94514 19.7587 9.94514 19.7587C9.94514 20.4149 9.95123 21.3383 9.95552 21.9886C9.95785 22.3419 9.95965 22.6145 9.95965 22.7198C9.95965 23.0333 9.74191 23.4143 9.12256 23.3034C4.29836 21.6926 0.920944 17.1158 0.920944 11.7674C0.920944 5.07832 6.05482 0 12.7661 0C19.4774 0 24.9209 5.07832 24.9209 11.7674ZM8.69675 18.9533C8.83707 18.9533 8.94836 18.8761 8.94836 18.7797C8.94836 18.6687 8.82256 18.5916 8.6774 18.606C8.53707 18.606 8.42578 18.6832 8.42578 18.7797C8.42578 18.8906 8.53707 18.9677 8.69675 18.9533ZM7.65159 18.7989C7.50643 18.77 7.40965 18.6591 7.44352 18.5626C7.4774 18.4662 7.61772 18.4179 7.74352 18.4517C7.88869 18.4951 7.98062 18.606 7.95159 18.7025C7.92256 18.7989 7.7774 18.8472 7.65159 18.7989ZM9.35965 18.717C9.34514 18.606 9.44191 18.5144 9.58223 18.4806C9.72256 18.4662 9.8532 18.5289 9.86772 18.6205C9.88223 18.717 9.78546 18.8086 9.64514 18.8423C9.49998 18.8761 9.37417 18.8134 9.35965 18.717ZM5.65804 16.8843C5.57578 16.7927 5.56127 16.6818 5.62417 16.6335C5.68707 16.5708 5.79836 16.6046 5.87578 16.6818C5.95804 16.7734 5.97256 16.8843 5.90965 16.9326C5.84675 16.9952 5.73546 16.9615 5.65804 16.8843ZM5.21288 16.431C5.11611 16.3828 5.06772 16.3056 5.10159 16.2429C5.13546 16.1947 5.21288 16.1802 5.30965 16.2091C5.40643 16.2574 5.45481 16.3345 5.42094 16.3972C5.38707 16.4647 5.2903 16.4792 5.21288 16.431ZM6.73223 18.2588C6.62094 18.1672 6.59191 18.0225 6.66933 17.9598C6.73223 17.8826 6.8774 17.8971 6.98385 18.008C7.08062 18.0996 7.10965 18.2443 7.04675 18.307C6.98385 18.3842 6.84352 18.3697 6.73223 18.2588ZM6.11772 17.5354C6.0403 17.4245 6.0403 17.2991 6.11772 17.2509C6.19514 17.1882 6.32094 17.2364 6.38869 17.3473C6.46611 17.4582 6.46611 17.5836 6.38869 17.6463C6.32578 17.6945 6.19514 17.6463 6.11772 17.5354Z" fill="currentColor" />
+</svg>
+</i>
+            Github
+          </a>
+        
+        
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-project">
+    <h2>Animal Adjectives</h2>
+    <div class="c-project__inner">
+      <picture class='c-project__img'>
+        <source type='image/webp' srcset='/images/processed/38a32464-600.webp 600w,/images/processed/38a32464-800.webp 800w,/images/processed/38a32464-1200.webp 1200w' sizes=(min-width: 640px) 500px, 100vw>
+  <source type='image/jpeg' srcset='/images/processed/38a32464-600.jpeg 600w,/images/processed/38a32464-800.jpeg 800w,/images/processed/38a32464-1200.jpeg 1200w' sizes=(min-width: 640px) 500px, 100vw>
+        <img
+          alt='Animal Adjectives'
+          src='/images/processed/38a32464-600.jpeg'>
+      </picture>
+
+      <div class="c-project__summary">
+        <div class="c-project__content">
+          <p>Throbbing Goat, Lecherous Yellow Eyed Penguin and Soggy Great White Shark. Animal Adjectives combines a random adjective with a random animal.</p>
+<p>Some key features include:</p>
+<ul>
+<li>Push notifications with new animal adjectives</li>
+<li>Sharing to Facebook</li>
+<li>Favourites system</li>
+</ul>
+
+        </div>
+        
+          <a class="c-btn" href=https://github.com/chrisberry4545/AnimalAdjectives target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 25 24" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9209 11.7674C24.9209 17.1158 21.6403 21.6926 16.8016 23.2937C16.1871 23.4046 15.9645 23.0236 15.9645 22.7102C15.9645 22.5795 15.9661 22.2726 15.9682 21.8615C15.9725 21.0282 15.979 19.7668 15.979 18.6784C15.979 17.545 15.6016 16.8216 15.1564 16.4406C17.8613 16.1368 20.7113 15.7655 20.7113 11.1115C20.7113 9.79011 20.2371 9.12458 19.4629 8.27096C19.5887 7.95748 20 6.66981 19.3371 4.99633C18.3258 4.67803 15.9984 6.29847 15.9984 6.29847C15.0306 6.02839 13.9903 5.88854 12.9597 5.88854C11.929 5.88854 10.8887 6.02839 9.92094 6.29847C9.92094 6.29847 7.59352 4.68286 6.58223 4.99633C5.91933 6.66499 6.33062 7.95748 6.45643 8.27096C5.68223 9.11975 5.31449 9.78529 5.31449 11.1115C5.31449 15.751 8.04352 16.1416 10.7484 16.4406C10.4 16.7589 10.0855 17.2943 9.97417 18.0659C9.28223 18.3842 7.50643 18.9195 6.44675 17.0579C5.78385 15.9101 4.57901 15.8137 4.57901 15.8137C3.39352 15.7992 4.50159 16.5564 4.50159 16.5564C5.29514 16.9181 5.84675 18.3215 5.84675 18.3215C6.55804 20.4821 9.94514 19.7587 9.94514 19.7587C9.94514 20.4149 9.95123 21.3383 9.95552 21.9886C9.95785 22.3419 9.95965 22.6145 9.95965 22.7198C9.95965 23.0333 9.74191 23.4143 9.12256 23.3034C4.29836 21.6926 0.920944 17.1158 0.920944 11.7674C0.920944 5.07832 6.05482 0 12.7661 0C19.4774 0 24.9209 5.07832 24.9209 11.7674ZM8.69675 18.9533C8.83707 18.9533 8.94836 18.8761 8.94836 18.7797C8.94836 18.6687 8.82256 18.5916 8.6774 18.606C8.53707 18.606 8.42578 18.6832 8.42578 18.7797C8.42578 18.8906 8.53707 18.9677 8.69675 18.9533ZM7.65159 18.7989C7.50643 18.77 7.40965 18.6591 7.44352 18.5626C7.4774 18.4662 7.61772 18.4179 7.74352 18.4517C7.88869 18.4951 7.98062 18.606 7.95159 18.7025C7.92256 18.7989 7.7774 18.8472 7.65159 18.7989ZM9.35965 18.717C9.34514 18.606 9.44191 18.5144 9.58223 18.4806C9.72256 18.4662 9.8532 18.5289 9.86772 18.6205C9.88223 18.717 9.78546 18.8086 9.64514 18.8423C9.49998 18.8761 9.37417 18.8134 9.35965 18.717ZM5.65804 16.8843C5.57578 16.7927 5.56127 16.6818 5.62417 16.6335C5.68707 16.5708 5.79836 16.6046 5.87578 16.6818C5.95804 16.7734 5.97256 16.8843 5.90965 16.9326C5.84675 16.9952 5.73546 16.9615 5.65804 16.8843ZM5.21288 16.431C5.11611 16.3828 5.06772 16.3056 5.10159 16.2429C5.13546 16.1947 5.21288 16.1802 5.30965 16.2091C5.40643 16.2574 5.45481 16.3345 5.42094 16.3972C5.38707 16.4647 5.2903 16.4792 5.21288 16.431ZM6.73223 18.2588C6.62094 18.1672 6.59191 18.0225 6.66933 17.9598C6.73223 17.8826 6.8774 17.8971 6.98385 18.008C7.08062 18.0996 7.10965 18.2443 7.04675 18.307C6.98385 18.3842 6.84352 18.3697 6.73223 18.2588ZM6.11772 17.5354C6.0403 17.4245 6.0403 17.2991 6.11772 17.2509C6.19514 17.1882 6.32094 17.2364 6.38869 17.3473C6.46611 17.4582 6.46611 17.5836 6.38869 17.6463C6.32578 17.6945 6.19514 17.6463 6.11772 17.5354Z" fill="currentColor" />
+</svg>
+</i>
+            Github
+          </a>
+        
+        
+        
+          <a class="c-btn" href=https://play.google.com/store/apps/details?id=chrisb.animaladjectives&hl=en_GB target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.72881 5.67103L14.4681 11.4259L16.0309 9.863L8.72881 5.67103ZM7.23085 5.33301C6.89283 5.50985 6.66663 5.83229 6.66663 6.25093V17.7268C6.66663 18.1455 6.89287 18.468 7.23093 18.6448L13.9038 11.9876L7.23097 5.33301H7.23085ZM16.7565 10.3129L18.2882 11.1996C18.7875 11.5715 18.7875 12.4089 18.3194 12.7807L16.7565 13.6675L15.048 11.9902L16.7565 10.3129ZM16.0309 14.1174L8.72881 18.3093L14.4681 12.5545L16.0309 14.1174Z" fill="currentColor"/>
+  <circle cx="12" cy="12" r="11.25" stroke="currentColor" stroke-width="1.5"/>
+</svg>
+</i>
+            Google Play
+          </a>
+        
+        
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-project">
+    <h2>Parabola Software</h2>
+    <div class="c-project__inner">
+      <picture class='c-project__img'>
+        <source type='image/webp' srcset='/images/processed/dd3e755c-600.webp 600w,/images/processed/dd3e755c-800.webp 800w,/images/processed/dd3e755c-1200.webp 1200w' sizes=(min-width: 640px) 500px, 100vw>
+  <source type='image/jpeg' srcset='/images/processed/dd3e755c-600.jpeg 600w,/images/processed/dd3e755c-800.jpeg 800w,/images/processed/dd3e755c-1200.jpeg 1200w' sizes=(min-width: 640px) 500px, 100vw>
+        <img
+          alt='Parabola Software'
+          src='/images/processed/dd3e755c-600.jpeg'>
+      </picture>
+
+      <div class="c-project__summary">
+        <div class="c-project__content">
+          <p>Parabola software are a software agency based in London.</p>
+<p>While working there I produced software to solve a range of problems for a range of clients including colleges, housing associations and charities.</p>
+
+        </div>
+        
+        
+        
+        
+          <a class="c-btn" href=https://www.parabolasoft.co.uk/ target="_blank">
+            <i class="c-btn__icon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 5.373 5.373 0 12 0C18.627 0 24 5.373 24 12C24 18.627 18.627 24 12 24C5.373 24 0 18.627 0 12ZM7.8465 21.645C9.12 22.1955 10.524 22.5 12 22.5L12.0015 22.4985C14.9415 22.4985 17.598 21.2895 19.5045 19.3425C19.5075 19.302 19.5135 19.26 19.524 19.2195C20.628 14.868 20.0445 11.706 19.7205 10.4925C19.6455 10.497 19.5705 10.4985 19.497 10.4985C18.3165 10.4985 17.172 10.0335 16.3185 9.18C15.468 8.331 15 7.2 15 5.9985C15 4.797 15.468 3.6675 16.3185 2.817C16.4085 2.727 16.503 2.6415 16.6005 2.559C15.2115 1.881 13.65 1.5 12 1.5C10.9575 1.5 9.951 1.6515 9 1.935V3.75C9 3.9495 8.922 4.14 8.781 4.281L5.781 7.281C5.64 7.4205 5.4495 7.5 5.25 7.5H2.511C1.863 8.8635 1.5 10.389 1.5 12C1.5 15.5685 3.2805 18.72 6 20.6175V16.2135L3.414 14.9205C3.1605 14.7945 3 14.5335 3 14.25V9.75C3 9.336 3.336 9 3.75 9H6.75C6.9495 9 7.14 9.078 7.281 9.219C7.308 9.2475 10.1025 12 12.75 12C13.164 12 13.5 12.336 13.5 12.75V15C13.5 15.183 13.4325 15.36 13.311 15.498L7.8465 21.645Z" fill="currentColor"/>
+</svg>
+</i>
+            Website
+          </a>
+        
+        
+      </div>
+
+    </div>
+  </div>
+
+  <div class="c-project">
+    <h2>MSc. Dissertation</h2>
+    <div class="c-project__inner">
+      <picture class='c-project__img'>
+        <source type='image/webp' srcset='/images/processed/84f0953c-600.webp 600w,/images/processed/84f0953c-800.webp 800w,/images/processed/84f0953c-1200.webp 1200w' sizes=(min-width: 640px) 500px, 100vw>
+  <source type='image/jpeg' srcset='/images/processed/84f0953c-600.jpeg 600w,/images/processed/84f0953c-800.jpeg 800w,/images/processed/84f0953c-1200.jpeg 1200w' sizes=(min-width: 640px) 500px, 100vw>
+        <img
+          alt='MSc. Dissertation'
+          src='/images/processed/84f0953c-600.jpeg'>
+      </picture>
+
+      <div class="c-project__summary">
+        <div class="c-project__content">
+          <p>My MSc. Dissertation applied Reinforced Learning through self play to the game of Monopoly. I used this technique to produce an artificial intelligence which could beat human players in a game of Monopoly.</p>
+
+        </div>
+        
+        
+        
+        
+        
+          <a class="c-btn" href=https://github.com/chrisberry4545/finding-a-winning-strategy-in-monopoly-msc/raw/master/Dissertation.pdf target="_blank">
+            <i class="c-btn__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+  <path d="M216 0h80c13.3 0 24 10.7 24 24v168h87.7c17.8 0 26.7 21.5 14.1 34.1L269.7 378.3c-7.5 7.5-19.8 7.5-27.3 0L90.1 226.1c-12.6-12.6-3.7-34.1 14.1-34.1H192V24c0-13.3 10.7-24 24-24zm296 376v112c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V376c0-13.3 10.7-24 24-24h146.7l49 49c20.1 20.1 52.5 20.1 72.6 0l49-49H488c13.3 0 24 10.7 24 24zm-124 88c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20zm64 0c0-11-9-20-20-20s-20 9-20 20 9 20 20 20 20-9 20-20z"/>
+</svg>
+</i>
+            Download
+          </a>
+        
+      </div>
+
+    </div>
+  </div>
+
+
+
+  </body>
+</html>
