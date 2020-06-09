@@ -1,0 +1,26 @@
+.c-btn {
+  width: $btn-width;
+  max-width: 100%;
+  background: $primary-button-background-color;
+  color: $primary-button-text-color;
+  text-decoration: none;
+  text-align: left;
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  border-radius: 12px;
+  margin: 0 auto 0.75rem;
+  box-shadow: 0px 4px 4px transparentize($primary-button-background-color, .75);
+  box-sizing: border-box;
+
+  &:hover {
+    color: $primary-button-text-color-hover;
+  }
+}
+
+  .c-btn__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1.125rem;
+  }

@@ -1,0 +1,55 @@
+$background-svg: 'data:image/svg+xml;utf8,%3Csvg%20viewBox%3D%220%200%20237%20282%22%20fill%3D%22%23FFFFFF%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20x%3D%22205%22%20y%3D%220%22%20width%3D%2232%22%20height%3D%2255%22%20%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M192.027%200L134.137%200L192.027%2054.74V0Z%22%2F%3E%3Crect%20x%3D%22205%22%20y%3D%22227%22%20width%3D%2232%22%20height%3D%2255%22%2F%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M192.027%20227L134%20281.87L134.137%20282H192.027V227Z%22%20%2F%3E%3Crect%20x%3D%2271%22%20y%3D%2286%22%20width%3D%2232%22%20height%3D%22110%22%2F%3E%3Cpath%20d%3D%22M0%20140.87L58.0273%2086L58.0273%20195.74L0%20140.87Z%22%2F%3E%3C%2Fsvg%3E';
+
+.c-header {
+  position: relative;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: url($background-svg) repeat center;
+  background-size: 240px;
+  @media (min-width: $bp-tablet) {
+    &::before {
+      content: '';
+      background: linear-gradient(270deg, #FFFFFF calc(50% - 70px), rgba(255, 255, 255, 0) 0),#000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+}
+
+.c-header__contents {
+  text-align: center;
+  @media (min-width: $bp-tablet) {
+    position: absolute;
+    text-align: left;
+    left: calc(50% + 130px);
+  }
+}
+
+.c-header__logo {
+  width: 210px;
+  margin: 0 auto 3rem;
+  @media (min-width: $bp-tablet) {
+    display: none;
+  }
+}
+
+.c-header__job {
+  @media (min-width: $bp-tablet) {
+    text-align: left;
+  }
+}
+
+.c-header__link {
+  margin: 0 0.75rem;
+  @media (min-width: $bp-tablet) {
+    margin: 0 1.5rem 0 0;
+  }
+}

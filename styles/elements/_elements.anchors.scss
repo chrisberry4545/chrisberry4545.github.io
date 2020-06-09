@@ -1,0 +1,10 @@
+a {
+  text-decoration: underline;
+  color: $primary-text-color;
+  transition: color .2s ease-in-out;
+
+  &:hover {
+    transition: none;
+    color: $primary-highlight-color;
+  }
+}
