@@ -36,6 +36,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy('images/processed');
+  eleventyConfig.addPassthroughCopy('images/open-graph');
   eleventyConfig.addPassthroughCopy('scripts');
 
   eleventyConfig.addFilter('jsmin', function (code) {
