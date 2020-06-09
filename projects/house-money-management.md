@@ -1,7 +1,9 @@
 ---
 pageTitle: House Money Management
 date: 2015-01-25
-image: ./images//house-money-management/house-money-management-laptop.png
+image:
+  src: ./images/house-money-management/house-money-management-laptop.png
+  alt: House Money Management
 
 githubLink: https://github.com/chrisberry4545/HouseOwage
 

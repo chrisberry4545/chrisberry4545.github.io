@@ -1,7 +1,9 @@
 ---
 pageTitle: Kite
 date: 2017-05-17
-image: ./images//kite/kite-all.png
+image:
+  src: ./images/kite/kite-all.png
+  alt: Kite
 
 webLink: https://kite.ly
 

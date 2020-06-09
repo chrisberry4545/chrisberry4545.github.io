@@ -1,8 +1,9 @@
 ---
 pageTitle: Switchcraft
 date: 2019-04-01
-image: ./images//switchcraft/switchcraft-all.png
-imageLarge: ./images//switchcraft/switchcraft-all.png
+image:
+  src: ./images/switchcraft/switchcraft-all.png
+  alt: Switchcraft
 
 webLink: https://switchcraft.co.uk
 

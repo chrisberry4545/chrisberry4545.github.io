@@ -1,7 +1,9 @@
 ---
 pageTitle: London Bike Tracker
 date: 2015-07-05
-image: ./images//london-bikes/london-bikes-pebble.png
+image:
+  src: ./images/london-bikes/london-bikes-pebble.png
+  alt: London Bike Tracker
 
 githubLink: https://github.com/chrisberry4545/BikeTracker
 

@@ -1,7 +1,9 @@
 ---
 pageTitle: Librarians App
 date: 2014-12-11
-image: ./images//librarians-app/librarians-app-all.png
+image:
+  src: ./images/librarians-app/librarians-app-all.png
+  alt: Librarians App
 
 githubLink: https://github.com/chrisberry4545/LibrariansEP
 playStoreLink: https://play.google.com/store/apps/details?id=chris.librariansep

@@ -1,8 +1,9 @@
 ---
 pageTitle: Eat Seasonal
 date: 2019-04-22
-image: ./images//eat-seasonal/eat-seasonal-all.png
-imageLarge: ./images//eat-seasonal/eat-seasonal-all.png
+image:
+  src: ./images//eat-seasonal/eat-seasonal-all.png
+  alt: Eat Seasonal
 
 githubLink: https://github.com/chrisberry4545/seasonal
 iosAppStoreLink: https://apps.apple.com/us/app/eat-seasonal/id1496551124?ls=1

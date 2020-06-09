@@ -2,13 +2,7 @@
   <div class="c-project">
     <h2>{{ project.data.pageTitle }}</h2>
     <div class="c-project__inner">
-      <picture class="c-project__img">
-        <source media="(max-width: 800px)"
-                srcset="{{project.data.image}}">
-        <source media="(min-width:801px)"
-                srcset="{{project.data.imageLarge}}">
-        <img src="{{project.data.image}}" alt="{{project.data.pageTitle}}">
-      </picture>
+      {% responsivePicture project.data.image.src, project.data.image.alt, 'c-project__img' %}
 
       <div class="c-project__summary">
         <div class="c-project__content">

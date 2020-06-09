@@ -2,3 +2,4 @@ node_modules
 _site
 .DS_store
 _includes/css
+images/processed
