@@ -13,6 +13,7 @@
   }
 
   const elements = Array.from(document.querySelectorAll('[data-js-animate-in-view=""]'));
+  elements.forEach(el => el.classList.add('js-animate-in-view'))
 
   const isInViewport = (elem) => {
     const bounding = elem.getBoundingClientRect();
@@ -30,7 +31,7 @@
   const checkIfElementsShouldAnimate = () =>
     elements
       .filter(isInViewport)
-      .forEach(el => el.classList.add('js-animate-in-view'));
+      .forEach(el => el.classList.add('js-animate-in-view--in-view'));
 
   window.addEventListener(
     'scroll',
