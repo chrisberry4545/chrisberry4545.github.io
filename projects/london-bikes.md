@@ -1,6 +1,6 @@
 ---
 pageTitle: London Bike Tracker
-date: 2015-07-05
+date: 2015-11-05
 image:
   src: ./images/london-bikes/london-bikes-pebble.png
   alt: London Bike Tracker
