@@ -4,9 +4,7 @@ date: 2017-05-17
 image:
   src: ./images/kite/kite-all.png
   alt: Kite
-
 webLink: https://kite.ly
-
 ---
 Building apps which let users customize products with their own imagery and buy them, or sell them to others.
 Some of the projects I worked on include:
