@@ -39,6 +39,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('images/processed');
   eleventyConfig.addPassthroughCopy('images/open-graph');
   eleventyConfig.addPassthroughCopy('scripts');
+  eleventyConfig.addPassthroughCopy('robots.txt');
 
   eleventyConfig.addFilter('jsmin', function (code) {
     let minified = Terser.minify(code);
