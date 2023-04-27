@@ -48,4 +48,8 @@ module.exports = function (eleventyConfig) {
 
     return minified.code;
   });
+
+  eleventyConfig.addFilter('reversed', function (data) {
+    return data.slice().reverse();
+  });
 };
