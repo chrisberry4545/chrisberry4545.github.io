@@ -1,5 +1,6 @@
 const Image = require('@11ty/eleventy-img');
 const Terser = require('terser');
+const sitemap = require("@quasibit/eleventy-plugin-sitemap");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('styles');
@@ -51,5 +52,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('reversed', function (data) {
     return data.slice().reverse();
+  });
+
+  eleventyConfig.addPlugin(sitemap, {
+    sitemap: {
+      hostname: "http://chrisberry4545.github.io/",
+    },
   });
 };
