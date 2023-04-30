@@ -1,6 +1,8 @@
 $primary-text-color: #000000;
 $primary-highlight-color: #7D7D7D;
 $divider-color: #C9C9C9;
-$primary-button-background-color: #000000;
-$primary-button-text-color: #FFFFFF;
-$primary-button-text-color-hover: #FFFFFF;
+$primary-color: #000;
+$primary-color-inverse: #FFF;
+$primary-button-background-color: $primary-color;
+$primary-button-text-color: $primary-color-inverse;
+$primary-button-text-color-hover: $primary-color-inverse;

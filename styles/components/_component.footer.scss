@@ -1,0 +1,39 @@
+.c-footer {
+  background: $primary-color;
+  color: $primary-color-inverse;
+  padding: 20px;
+}
+
+.c-footer__contents {
+  max-width: $content-max-width;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.c-footer__link {
+  color: $primary-color-inverse;
+  text-decoration: none;
+  font-weight: 400;
+  margin-bottom: 8px;
+
+  &:hover {
+    color: $primary-color-inverse;
+    fill: $primary-color-inverse;
+  }
+}
+
+.c-footer__home-link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: $primary-color-inverse;
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.c-footer__logo {
+  width: 30px;
+}

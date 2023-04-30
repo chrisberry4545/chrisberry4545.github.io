@@ -1,12 +1,12 @@
 .c-header-slim {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid $primary-color;
   padding: 20px;
 }
 
 .c-header-slim__inner {
   display: flex;
   align-items: center;
-  max-width: 680px;
+  max-width: $content-max-width;
   margin: auto;
 }
 

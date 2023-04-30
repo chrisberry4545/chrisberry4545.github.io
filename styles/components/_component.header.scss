@@ -12,7 +12,7 @@ $background-svg: 'data:image/svg+xml;utf8,%3Csvg%20viewBox%3D%220%200%20237%2028
   @media (min-width: $bp-tablet) {
     &::before {
       content: '';
-      background: linear-gradient(270deg, #FFFFFF calc(50% - 70px), rgba(255, 255, 255, 0) 0),#000;
+      background: linear-gradient(270deg, $primary-color-inverse calc(50% - 70px), rgba(255, 255, 255, 0) 0),$primary-color;
       position: absolute;
       top: 0;
       left: 0;
