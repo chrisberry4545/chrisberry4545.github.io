@@ -1,7 +1,7 @@
 h1, h2, h3, h4, h5 {
   margin: 0;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 }
 
 h1 {
@@ -11,15 +11,9 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin-bottom: 3rem;
   font-weight: 300;
+  margin: 1rem 0;
   @media (min-width: $bp-tablet) {
-    margin-bottom: 5rem;
+    margin: 2rem 0;
   }
-}
-
-h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 300;
 }

@@ -20,6 +20,13 @@ $project-image-content-margin: 3.125rem;
 }
 
   .c-project__heading {
+    margin-top: 0;
+    margin-bottom: 3rem;
+    text-align: center;
+    @media (min-width: $bp-tablet) {
+      margin-bottom: 5rem;
+    }
+
     &.js-animate-in-view {
       opacity: 0;
     }
