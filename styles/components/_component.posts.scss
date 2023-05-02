@@ -1,5 +1,11 @@
-.c-post {
-  margin: auto;
+.c-posts {
+  margin: 10px auto;
+  min-height: 65vh;
   max-width: $content-max-width;
   padding: 20px;
+}
+
+.c-posts__title {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
 }

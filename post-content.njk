@@ -1,0 +1,13 @@
+---
+layout: _layout.njk
+pagination:
+  data: collections.posts
+  size: 1
+  alias: item
+permalink: "posts/{{ item.fileSlug }}/"
+---
+{% include "_header-slim.njk" %}
+
+{% include "_post-content.njk" %}
+
+{% include "_footer.njk" %}

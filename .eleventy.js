@@ -1,6 +1,7 @@
 const Image = require('@11ty/eleventy-img');
 const Terser = require('terser');
 const sitemap = require("@quasibit/eleventy-plugin-sitemap");
+const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('styles');
@@ -20,7 +21,7 @@ module.exports = function (eleventyConfig) {
     const stats = await Image(src, {
       outputDir: 'images/processed/',
       urlPath: '/images/processed',
-      widths: [600, 800, 1200],
+      widths: [100, 600, 800, 1200],
       ...options
     });
     const lowestSrc = stats.jpeg[0];
@@ -53,6 +54,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter('reversed', function (data) {
     return data.slice().reverse();
+  });
+
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj)
+      .toLocaleString(DateTime.DATE_MED);
   });
 
   eleventyConfig.addPlugin(sitemap, {

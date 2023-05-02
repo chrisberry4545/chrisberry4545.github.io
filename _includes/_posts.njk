@@ -1,0 +1,9 @@
+<div class="c-posts">
+  <h1 class="c-posts__title">Recent posts</h1>
+
+  {% for post in collections.posts | reversed %}
+    {% ifAsync true %}
+      {% include "_post-summary.njk" %}
+    {% endif %}
+  {% endfor %}
+</div>

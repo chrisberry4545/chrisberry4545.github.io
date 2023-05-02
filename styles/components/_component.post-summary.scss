@@ -1,0 +1,38 @@
+.c-post-summary {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 30px;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  @media (min-width: $bp-tablet) {
+    flex-direction: row-reverse;
+  }
+}
+
+.c-post-summary__title {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.c-post-summary__date {
+  font-size: 0.8rem;
+  color: transparentize(
+    $primary-text-color, 0.4
+  );
+}
+
+.c-post-summary__image {
+  max-width: 100px;
+  margin-bottom: 6px;
+
+  @media (min-width: $bp-tablet) {
+    margin: 0 0 0 12px;
+  }
+}

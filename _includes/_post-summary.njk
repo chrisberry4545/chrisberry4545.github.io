@@ -1,0 +1,17 @@
+<a class="c-post-summary" href="{{ post.fileSlug }}/">
+  {% responsivePicture post.data.image.src, post.data.image.alt, 'c-post-summary__image' %}
+
+  <div>
+    <h2 class="c-post-summary__title">
+      {{ post.data.title }}
+    </h2>
+
+    <p  class="c-post-summary__date">
+      {{ post.data.date | postDate }}
+    </p>
+
+    <p class="c-post-summary__text">
+      {{  post.data.summary }}
+    <p>
+  </div>
+</a>
